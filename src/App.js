@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import Header from './components/common/header/Header';
+import Footer from './components/common/footer/Footer';
+import Home from './components/views/home/Home';
+import Catalogue from './components/views/catalogue/Catalogue';
+import Contact from './components/views/contact/Contact';
+import Error from './components/views/error/Error';
 
 function App() {
+
+  const location = useLocation();
+  const hideFooter = location.pathname.includes('/contacto');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/catalogo' element={<Catalogue/>}/>
+        <Route path='/contacto' element={<Contact/>}/>
+        <Route path='/*' element={<Error/>}/>
+      </Routes>
+      {!hideFooter && <Footer/>}
     </div>
   );
 }
