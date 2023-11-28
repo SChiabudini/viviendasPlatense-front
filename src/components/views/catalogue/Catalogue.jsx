@@ -1,7 +1,15 @@
 import House from "./house/House";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { getProducts } from "../../../redux/productActions";
 
 const Catalogue = () => {
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(getProducts());
+    }, [dispatch]);
 
     const { products } = useSelector((state) => state.products);
 

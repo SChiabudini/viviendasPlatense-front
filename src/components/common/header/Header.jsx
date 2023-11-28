@@ -7,7 +7,7 @@ const Header = () => {
         <div className={style.div}>
             <div className={style.content}>
                 <h1><img src={logoHeader} alt="Viviendas Platense" title="Viviendas Platense - Construcciones Industrializadas"/></h1>
-                <Nav className={style.nav}/>
+                <div className={style.nav}><Nav/></div>
             </div>
         </div>
     );

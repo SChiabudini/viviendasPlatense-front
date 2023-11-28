@@ -1,7 +1,11 @@
+import Info from './info/Info';
+import Form from './form/Form';
+
 const Contact = () => {
     return(
         <div>
-            <p>Soy el contacto</p>
+            <Info/>
+            <Form/>
         </div>
     );
 }
