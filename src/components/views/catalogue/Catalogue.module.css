@@ -1,0 +1,12 @@
+.div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1140px;
+    margin: 0 auto;
+    grid-gap: 1rem;
+}
+
+.card {
+    width: calc(25% - 0.75rem);
+    box-sizing: border-box;
+}

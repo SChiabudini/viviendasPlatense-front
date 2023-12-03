@@ -1,6 +1,19 @@
 const validation = (userInput) => {
     const errors = {};
 
+    if (!userInput.number) {
+        errors.number = 'Debe ingresar un número';
+    }
+
+    if (userInput.number.length > 10) {
+        errors.number = 'El número no debe superar los 10 caracteres';
+    }
+    
+    if (!/^\d+$/.test(userInput.number)) {
+        errors.number = 'El número debe contener solo dígitos';
+    }
+
+
     if(!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(userInput.email)){
         errors.email = 'El email ingresado no es válido';
     }

@@ -4,17 +4,21 @@ export const productSlice = createSlice({
     name: "product",
     initialState: {
         products: [],
-        productsCopy: []
+        productsCopy: [],
+        selectedProduct: null
     },
     reducers: {
         getProductsReducer: (state, action) => {
             state.products = action.payload;
             state.productsCopy = action.payload;
-        }
+        },
+        getProductByIdReducer: (state, action) => {
+            const productId = action.payload;
+            state.selectedProduct = state.products.find(product => product._id === productId);
+        },
     }
-})
+});
 
+export const { getProductsReducer, getProductByIdReducer } = productSlice.actions;
 
-export const { getProductsReducer } = productSlice.actions
-
-export default productSlice.reducer 
+export default productSlice.reducer;

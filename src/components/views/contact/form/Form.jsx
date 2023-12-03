@@ -4,6 +4,7 @@ import validation from './validation';
 const Form = () => {
     const initialUserInput = {
         name: '',
+        number: '',
         email: '',
         message: ''
     };
@@ -11,6 +12,7 @@ const Form = () => {
     const [userInput, setUserInput] = useState(initialUserInput);
     const [touchedFields, setTouchedFields] = useState({
         name: false,
+        number: false,
         email: false,
         message: false
     });
@@ -51,18 +53,12 @@ const Form = () => {
         event.preventDefault();
 
         if (isFormValid()) {
-            // El formulario es válido, puedes enviar los datos
             console.log('Formulario válido:', userInput);
-
-            // Puedes realizar acciones adicionales después de enviar el formulario
-
-            // Mostrar mensaje de éxito
             setSuccessMessage('El mensaje ha sido enviado con éxito. En breve nos comunicaremos con usted.');
-
-            // Reiniciar los campos del formulario
             setUserInput(initialUserInput);
             setTouchedFields({
                 name: false,
+                number: false,
                 email: false,
                 message: false
             });
@@ -87,6 +83,15 @@ const Form = () => {
                     onBlur={handleBlur}
                 />
                 {touchedFields.name && errors.name && <p>{errors.name}</p>}
+                <label htmlFor="number">Teléfono</label>
+                <input
+                    name="number"
+                    type="text"
+                    value={userInput.number}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                />
+                {touchedFields.number && errors.number && <p>{errors.number}</p>}
                 <label htmlFor="email">Email</label>
                 <input
                     name="email"
