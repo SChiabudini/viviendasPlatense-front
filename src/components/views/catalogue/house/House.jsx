@@ -4,11 +4,15 @@ import { NavLink } from "react-router-dom";
 const House = ({id, type, size, price, image, rooms}) => {
     return (
         <div className={style.div}>
-            <img src={image} alt={type} />
-            <NavLink to={`/detail/${id}`}>{type}</NavLink>
-            <p>{size}</p>
-            <p>{price}</p>
-            <p>{rooms}</p>
+            <NavLink to={`/detail/${id}`}>
+                <div className={style.image}>
+                    <img src={image} alt={type} />
+                    <p>{size}</p>
+                </div>
+                <p>{type} - {rooms}</p>                
+                <p className={style.price}>{price}</p>
+
+            </NavLink>
         </div>
     )
 }
