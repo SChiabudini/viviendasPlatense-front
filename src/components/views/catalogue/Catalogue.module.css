@@ -1,12 +1,15 @@
 .div{
-    display: flex;
-    flex-wrap: wrap;
     width: 1140px;
     margin: 2rem auto;
-    grid-gap: 1rem;
 }
 
-.card {
+.card{
     width: calc(25% - 0.75rem);
     box-sizing: border-box;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;    
+    grid-gap: 1rem;
 }

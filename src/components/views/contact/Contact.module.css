@@ -1,0 +1,24 @@
+.div {
+    width: 1140px;
+    margin: 3rem auto;
+}
+
+.heading {
+    width: 50%;
+    text-align: left;
+    margin-bottom: 3rem;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    border-bottom: 2px solid #F43536;
+    color: #F43536;
+    padding-bottom: 1rem;
+}
+
+.content {
+   display: flex;
+}
+
+.article{
+    width: 50%;
+}
