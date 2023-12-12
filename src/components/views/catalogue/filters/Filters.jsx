@@ -25,38 +25,47 @@ const Filters = () => {
     
     return(
         <div className={style.div}>
-            <select onChange={handleFilterType}>
-                <option value="allTypes">Filtrar por tipo</option>
-                {uniqueTypes.map((type) => (
-                    <option value={type} key={type}>
-                        {type}
-                    </option>
-                ))}
-                <option value="allTypes">Todos los tipos</option>
-            </select>
+            <div className={style.filter}>
+                <p>Filtrar por tipo:</p>
+                <select onChange={handleFilterType}>
+                    <option value="allTypes">Todos los tipos</option>
+                    {uniqueTypes.map((type) => (
+                        <option value={type} key={type}>
+                            {type}
+                        </option>
+                    ))}
+                </select>
+            </div>
 
-            <select onChange={handleFilterRooms}>
-                <option value="allRooms">Filtrar por habitaciones</option>
-                {uniqueRooms.map((rooms) => (
-                    <option value={rooms} key={rooms}>
-                        {rooms}
-                    </option>
-                ))}
-                <option value="allRooms">Todos las opciones</option>
-            </select>
+            <div className={style.filter}>
+                <p>Filtrar por habitaciones:</p>
+                <select onChange={handleFilterRooms}>
+                    <option value="allRooms">Todos las opciones</option>
+                    {uniqueRooms.map((rooms) => (
+                        <option value={rooms} key={rooms}>
+                            {rooms}
+                        </option>
+                    ))}
+                </select>
+            </div>
 
-            <select onChange={handleOrderPrice}>
-                <option value="">Ordenar por precio</option>
-                <option value="A">Menor precio</option>
-                <option value="B">Mayor precio</option>
-            </select>
+            <div className={style.filter}>
+                <p>Ordenar por precio:</p>
+                <select onChange={handleOrderPrice}>
+                    <option value="">Seleccionar orden</option>
+                    <option value="A">Menor precio</option>
+                    <option value="B">Mayor precio</option>
+                </select>
+            </div>
 
-            <select onChange={handleOrderSize}>
-                <option value="">Ordenar por m2</option>
-                <option value="A">Menor tamaño</option>
-                <option value="B">Mayor tamaño</option>
-            </select>
-
+            <div className={style.filter}>
+                <p>Ordenar por m2:</p>
+                <select onChange={handleOrderSize}>
+                    <option value="">Seleccionar orden</option>
+                    <option value="A">Menor tamaño</option>
+                    <option value="B">Mayor tamaño</option>
+                </select>
+            </div>
         </div>
     )
 }
