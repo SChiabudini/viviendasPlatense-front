@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { filterByRooms, filterByType, orderByPrice, orderBySize } from "../../../../redux/productActions";
+import style from './Filters.module.css';
 
 const Filters = () => {
 
@@ -23,7 +24,7 @@ const Filters = () => {
     }
     
     return(
-        <div>
+        <div className={style.div}>
             <select onChange={handleFilterType}>
                 <option value="allTypes">Filtrar por tipo</option>
                 {uniqueTypes.map((type) => (

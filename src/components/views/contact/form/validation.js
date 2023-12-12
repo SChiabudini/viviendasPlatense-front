@@ -31,7 +31,7 @@ const validation = (userInput) => {
     }
 
     if(userInput.name.length < 6 || userInput.name.length > 30){
-        errors.name = "El nombre debe tener una longitud entre 6 y 10 caracteres"
+        errors.name = "El nombre debe tener una longitud entre 6 y 30 caracteres"
     }
 
     if(!userInput.message){

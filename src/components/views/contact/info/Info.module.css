@@ -2,25 +2,30 @@
     text-align: left;
 }
 
-img{
+.div p img{
     width: 1.5rem;
     display: inline-block;
     margin-right: 1rem;
+    vertical-align: middle;
 }
 
-a{
+.div p a{
     text-decoration: none;
     font-size: 16px;
-    line-height: 28px;
     font-weight: 400;
     color: #666666;
     display: inline-block;
 }
 
-a:hover{
+.div p a:hover{
     text-decoration: underline;
 }
 
-p{
-    height: 28px;
+.div p{
+    height: 35px;
+    margin: 1.5rem 0;
+}
+
+.map{
+    margin-bottom: 2rem;
 }

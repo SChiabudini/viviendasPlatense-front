@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import emailjs from 'emailjs-com'; // Importa la librería
-
+import emailjs from 'emailjs-com';
 import validation from './validation';
+import style from './Form.module.css';
 
 const Form = () => {
     const initialUserInput = {
@@ -92,46 +92,50 @@ const Form = () => {
     };
 
     return (
-        <div>
-            <h3>Envíanos tu consulta</h3>
+        <div className={style.div}>
+            <h3>Envianos tu consulta</h3>
             {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
             <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Nombre</label>
-                <input
+                <p className={style.label}><label htmlFor="name">Nombre*</label></p>
+                <p className={style.input}><input
                     name="name"
                     type="text"
+                    placeholder='Debe contener entre 6 y 30 caracteres'
                     value={userInput.name}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                />
-                {touchedFields.name && errors.name && <p>{errors.name}</p>}
-                <label htmlFor="number">Teléfono</label>
-                <input
+                /></p>
+                {touchedFields.name && errors.name && <p className={style.error}>{errors.name}</p>}
+                <p className={style.label}><label htmlFor="number">Teléfono*</label></p>
+                <p className={style.input}><input
                     name="number"
                     type="text"
+                    placeholder='Solo números, sin 0 y sin 15'
                     value={userInput.number}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                />
-                {touchedFields.number && errors.number && <p>{errors.number}</p>}
-                <label htmlFor="email">Email</label>
-                <input
+                /></p>
+                {touchedFields.number && errors.number && <p className={style.error}>{errors.number}</p>}
+                <p className={style.label}><label htmlFor="email">Email*</label></p>
+                <p className={style.input}><input
                     name="email"
                     type="email"
+                    placeholder='tuemail@correo.com'
                     value={userInput.email}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                />
-                {touchedFields.email && errors.email && <p>{errors.email}</p>}
-                <label htmlFor="message">Mensaje</label>
-                <textarea
+                /></p>
+                {touchedFields.email && errors.email && <p className={style.error}>{errors.email}</p>}
+                <p className={style.label}><label htmlFor="message">Mensaje*</label></p>
+                <p className={style.input}><textarea
                     name="message"
+                    placeholder='Debe contener al menos 20 caracteres de longitud'
                     value={userInput.message}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                ></textarea>
-                {touchedFields.message && errors.message && <p>{errors.message}</p>}
-                <button type="submit" disabled={!isFormValid()}>Enviar</button>
+                ></textarea></p>
+                {touchedFields.message && errors.message && <p className={style.error}>{errors.message}</p>}
+                <div className={style.formButton}><button type="submit" disabled={!isFormValid()}>Enviar</button></div>
             </form>
         </div>
     )

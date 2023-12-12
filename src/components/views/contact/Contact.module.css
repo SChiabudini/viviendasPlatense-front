@@ -4,7 +4,7 @@
 }
 
 .heading {
-    width: 50%;
+    width: calc(50% - 25px);
     text-align: left;
     margin-bottom: 3rem;
     font-size: 24px;
@@ -20,5 +20,10 @@
 }
 
 .article{
-    width: 50%;
+    width: calc(50% - 30px);
+}
+
+.form{
+    margin-right: 0;
+    margin-left: auto;
 }
