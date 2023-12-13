@@ -1,7 +1,9 @@
 .div{
     margin-bottom: 2rem;
+    padding-bottom: .75rem;
     width: 100%;
     text-align: right;
+    border-bottom: solid rgba(0, 0, 0, 0.2) 1px;
 }
 
 .div .filter select{

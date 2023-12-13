@@ -1,20 +1,22 @@
 import style from './House.module.css';
 import { NavLink } from "react-router-dom";
 
-const House = ({id, type, size, price, image, rooms}) => {
+const House = ({ id, type, size, price, image, rooms }) => {
+
+    const formattedPrice = price.toLocaleString();
+
     return (
         <div className={style.div}>
-            <NavLink to={`/detail/${id}`}>
+            <NavLink className={style.link} to={`/detail/${id}`}>
                 <div className={style.image}>
                     <img src={image} alt={type} />
-                    <p>{size}</p>
+                    <div className={style.size}><p>{size} m<sup>2</sup></p></div>
                 </div>
-                <p>{type} - {rooms}</p>                
-                <p className={style.price}>{price}</p>
-
+                <p className={style.title}>{type} - {rooms}</p>
+                <p className={style.price}>${formattedPrice}</p>
             </NavLink>
         </div>
-    )
+    );
 }
 
 export default House;
