@@ -4,6 +4,7 @@ import { getProductById } from '../../../../redux/productActions';
 import { useState, useEffect } from 'react';
 import style from "./Detail.module.css";
 import { Carousel } from 'react-responsive-carousel';
+import whatsapp from './whatsapp.svg';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Detail = () => {
@@ -14,12 +15,19 @@ const Detail = () => {
 
     useEffect(() => {
         dispatch(getProductById(id));
-        setProduct(selectedProduct);
-    }, [dispatch, id, selectedProduct]);
+    }, [dispatch, id]);
+
+    useEffect(() => {
+        if (selectedProduct) {
+            setProduct(selectedProduct);
+        }
+    }, [selectedProduct]);
+
+    const formattedPrice = product.price ? product.price.toLocaleString() : '';
 
     return (
-        <div>
-            <div>
+        <div className={style.div}>
+            <div className={style.carousel}>
                 {product.images && product.images.length > 0 && (
                     <Carousel showThumbs={false} showStatus={false}>
                         {product.images.map((image, index) => (
@@ -31,12 +39,13 @@ const Detail = () => {
                 )}
             </div>
 
-            <div>
+            <div className={style.info}>
                 <h2>{product.type}</h2>
                 <p>- {product.size} m<sup>2</sup></p>
                 <p>- {product.rooms}</p>
-                <p>{product.price}</p>
-                <NavLink to="/catalogo">Volver al catálogo</NavLink>
+                <p className={style.price}>${formattedPrice} <span className={style.contado}>(contado)</span></p>
+                <p className={style.whatsapp}><img src={whatsapp} alt=""/><a href="">Consultanos por este modelo</a></p>
+                <p className={style.back}><NavLink to="/catalogo">Volver al catálogo</NavLink></p>
             </div>
         </div>
     );
