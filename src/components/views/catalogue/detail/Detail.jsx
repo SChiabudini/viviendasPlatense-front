@@ -32,7 +32,7 @@ const Detail = () => {
                     <Carousel showThumbs={false} showStatus={false}>
                         {product.images.map((image, index) => (
                             <div key={index}>
-                                <img src={image} alt={`Product ${index + 1}`} />
+                                <img src={image} alt={`Product ${index + 1}`}/>
                             </div>
                         ))}
                     </Carousel>
@@ -43,6 +43,12 @@ const Detail = () => {
                 <h2>{product.type}</h2>
                 <p>- {product.size} m<sup>2</sup></p>
                 <p>- {product.rooms}</p>
+                <p>- Descripción:</p>
+                <ul className={style.ul}> 
+                    {product.description?.map((description) => (
+                        <li className={style.li}>{description}</li>
+                    ))}
+                </ul>
                 <p className={style.price}>${formattedPrice} <span className={style.contado}>(contado)</span></p>
                 <p className={style.whatsapp}><img src={whatsapp} alt=""/><a href="">Consultanos por este modelo</a></p>
                 <p className={style.back}><NavLink to="/catalogo">Volver al catálogo</NavLink></p>

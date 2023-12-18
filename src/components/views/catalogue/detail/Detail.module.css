@@ -20,16 +20,18 @@
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 300;
-    margin-top: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
     border-bottom: solid 1.5px #0A499A;
     width: 100%;
-    padding-bottom: 1rem;
+    padding-bottom: 0.75rem;
 }
 
 .info p{
     font-size: 21px;
     font-weight: 300;
     color: #666666;
+    margin: 0.5rem 0;
 }
 
 .price{
@@ -40,8 +42,8 @@
     letter-spacing: 0.1rem;
     border-radius: 2px;
     text-align: center;
-    padding: 1rem;
-    margin-top: 3rem;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
@@ -53,7 +55,7 @@
     background-color: #00D95F;
     border-radius: 2px;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
     align-items: center;
     justify-content: center;
     height: 2.25rem;
@@ -88,4 +90,11 @@
 
 .back a:hover{
     color: #1A1A1A;
+}
+.li{
+    color: #666666;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
 }

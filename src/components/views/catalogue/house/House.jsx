@@ -12,7 +12,7 @@ const House = ({ id, type, size, price, image, rooms }) => {
                     <img src={image} alt={type} />
                     <div className={style.size}><p>{size} m<sup>2</sup></p></div>
                 </div>
-                <p className={style.title}>{type} - {rooms}</p>
+                <p className={style.title}>{size} {type} - {rooms}</p>
                 <p className={style.price}>${formattedPrice}</p>
             </NavLink>
         </div>
