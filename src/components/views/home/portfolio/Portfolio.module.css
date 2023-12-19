@@ -31,3 +31,11 @@
     height: auto; /* Ajusta automáticamente la altura para mantener la proporción original */
     max-height: 100%; /* Establece una altura máxima del 100% del contenedor */
 }
+
+img{
+    width: 200px;
+}
+
+video{
+    width: 200px;
+}

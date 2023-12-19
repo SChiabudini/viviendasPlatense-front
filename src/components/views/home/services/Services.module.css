@@ -1,0 +1,43 @@
+.div{
+    background-image: url(servicios.svg);
+    background-repeat: no-repeat;
+    height: 650px;
+}
+
+.content{
+    width: 1140px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.image{
+    width: 50%;
+    margin-left: 4rem;
+}
+
+.image img{
+    width: 20rem;
+}
+
+.info{
+    width: 50%;
+    text-align: left;
+    padding-left: 1rem;
+    box-sizing: border-box;
+}
+
+.info h2{
+    color: #FCDC5B;
+    font-size: 36px;
+    border-bottom: 2px solid #FCDC5B;
+    width: 80%;
+    padding-bottom: 0.75rem;
+}
+
+.info p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}

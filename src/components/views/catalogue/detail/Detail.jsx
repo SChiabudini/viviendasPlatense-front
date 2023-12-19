@@ -25,6 +25,8 @@ const Detail = () => {
 
     const formattedPrice = product.price ? product.price.toLocaleString() : '';
 
+    const whatsappMessage = `https://wa.me/542216911442?text=Buenos%20d%C3%ADas,%20quisiera%20consultar%20por%20el%20modelo%20${product.size + ' ' + product.type + ' ' + product.rooms},%20muchas%20gracias.`;
+
     return (
         <div className={style.div}>
             <div className={style.carousel}>
@@ -50,7 +52,7 @@ const Detail = () => {
                     ))}
                 </ul>
                 <p className={style.price}>${formattedPrice} <span className={style.contado}>(contado)</span></p>
-                <p className={style.whatsapp}><img src={whatsapp} alt=""/><a href="">Consultanos por este modelo</a></p>
+                <p className={style.whatsapp}><img src={whatsapp} alt=""/><a href={whatsappMessage} target="_blank" rel="noopener noreferrer">Consultanos por este modelo</a></p>
                 <p className={style.back}><NavLink to="/catalogo">Volver al catálogo</NavLink></p>
             </div>
         </div>
