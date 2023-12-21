@@ -1,0 +1,76 @@
+.div {
+    width: 1140px;
+    margin: 3rem auto;
+  }
+  
+  .slide {
+    position: relative;
+    text-align: left;
+  }
+  
+  .slide a {
+    text-decoration: none;
+  }
+  
+  .image {
+    position: relative;
+    z-index: -1;
+  }
+  
+  .imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
+    z-index: -1;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  }
+  
+  .slide img {
+    width: 90%;
+    height: 250px;
+    margin: 0 auto;
+    object-fit: cover;
+    position: relative; /* Añadida para establecer el contexto de apilamiento */
+    z-index: -2;
+  }
+  
+  .info {
+    position: relative;
+    z-index: 9999;
+    margin-top: -4rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .info p {
+    margin-left: 1.5rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0;
+  }
+  
+  .title{
+    color: white;
+    letter-spacing: 0.1rem;
+    font-size: 15px;
+  }
+
+  .price {
+    font-size: 24px;
+    color: #FCDC5B;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+  }
+
+  .toCatalogue{
+    text-align: right;
+    margin-right: 1%;
+  }
+
+  .toCatalogue a{
+    color: #666666;
+  }
+  

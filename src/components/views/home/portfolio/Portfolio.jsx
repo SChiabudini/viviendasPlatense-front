@@ -27,12 +27,12 @@ const Portfolio = () => {
     };
     
     return(
-        <div>
+        <div className={style.div}>
             {portfolios.map(portfolio => (
                 <div key={portfolio._id} onClick={() => openModal(portfolio)}>
-                        {portfolio.image && <img src={portfolio.image} alt={portfolio.text}/>}
-                        {portfolio.video && <video autoPlay muted loop playsInline>
-                            <source src={portfolio.video} type="video/mp4" />
+                        {portfolio.image && <img src={portfolio.image} alt={portfolio.text} className={style.portfolioImg}/>}
+                        {portfolio.video && <video autoPlay muted loop playsInline className={style.portfolioVideo}>
+                            <source src={portfolio.video} type="video/mp4"/>
                         </video>}
                         <p>{portfolio.text}</p>
                 </div>

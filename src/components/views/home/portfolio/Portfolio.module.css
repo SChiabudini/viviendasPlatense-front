@@ -1,3 +1,8 @@
+.div{
+    width: 1140px;
+    margin: 2rem auto;
+}
+
 .modal {
     position: fixed;
     top: 0;
@@ -32,10 +37,10 @@
     max-height: 100%; /* Establece una altura máxima del 100% del contenedor */
 }
 
-img{
+.portfolioImg{
     width: 200px;
 }
 
-video{
+.portfolioVideo{
     width: 200px;
 }
