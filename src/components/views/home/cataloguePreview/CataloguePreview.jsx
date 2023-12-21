@@ -18,6 +18,7 @@ const CataloguePreview = () => {
 
   return (
     <div className={style.div}>
+      <h2>Modelos disponibles</h2>
       <Slider {...settings}>
         {productsCopy.map((product, index) => (
           <div key={index} className={style.slide}>

@@ -2,6 +2,18 @@
     width: 1140px;
     margin: 3rem auto;
   }
+
+  .div h2{
+    color: #F43536;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    text-align: left;
+    border-bottom: 1.5px solid #F43536;
+    padding-bottom: 0.75rem;
+    width: 98%;
+    margin: 2rem auto;
+  }
   
   .slide {
     position: relative;
@@ -34,7 +46,7 @@
     height: 250px;
     margin: 0 auto;
     object-fit: cover;
-    position: relative; /* Añadida para establecer el contexto de apilamiento */
+    position: relative;
     z-index: -2;
   }
   
@@ -73,4 +85,5 @@
   .toCatalogue a{
     color: #666666;
   }
+
   
