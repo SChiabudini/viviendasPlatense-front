@@ -3,6 +3,17 @@
     margin: 2rem auto;
 }
 
+.div h2{
+    color: #F43536;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    text-align: left;
+    border-bottom: 1.5px solid #F43536;
+    padding-bottom: 0.75rem;
+    margin: 2rem auto;
+  }
+
 .modal {
     position: fixed;
     top: 0;
@@ -38,9 +49,55 @@
 }
 
 .portfolioImg{
-    width: 200px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .portfolioVideo{
-    width: 200px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.portfolioGroup{
+    display: flex;
+    grid-gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio{
+    width: calc(25% - 0.25rem);
+    height: 12rem;
+    position: relative;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo negro transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s; /* Transición de opacidad para suavizar el efecto */
+}
+  
+.portfolio:hover .overlay {
+    opacity: 1; /* Hacer visible al posar el mouse sobre el div .portfolio */
+    cursor: pointer;
+}
+  
+.overlay p {
+    color: white; /* Color del texto */
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
 }

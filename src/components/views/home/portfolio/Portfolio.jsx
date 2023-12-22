@@ -4,54 +4,79 @@ import { getPortfolios } from "../../../../redux/portfolioActions";
 import style from "./Portfolio.module.css";
 
 const Portfolio = () => {
+  const dispatch = useDispatch();
 
-    const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getPortfolios());
+  }, [dispatch]);
 
-    useEffect(() => {
-        dispatch(getPortfolios());
-    }, [dispatch]);
+  const { portfolios } = useSelector((state) => state.portfolios);
 
-    const { portfolios } = useSelector((state) => state.portfolios);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedPortfolio, setSelectedPortfolio] = useState(null);
 
-    const [modalOpen, setModalOpen] = useState(false);
-    const [selectedPortfolio, setSelectedPortfolio] = useState(null);
+  const openModal = (portfolio) => {
+    setSelectedPortfolio(portfolio);
+    setModalOpen(true);
+  };
 
-    const openModal = (portfolio) => {
-        setSelectedPortfolio(portfolio);
-        setModalOpen(true);
-    };
-    
-    const closeModal = () => {
-        setSelectedPortfolio(null);
-        setModalOpen(false);
-    };
-    
-    return(
-        <div className={style.div}>
-            {portfolios.map(portfolio => (
-                <div key={portfolio._id} onClick={() => openModal(portfolio)}>
-                        {portfolio.image && <img src={portfolio.image} alt={portfolio.text} className={style.portfolioImg}/>}
-                        {portfolio.video && <video autoPlay muted loop playsInline className={style.portfolioVideo}>
-                            <source src={portfolio.video} type="video/mp4"/>
-                        </video>}
-                        <p>{portfolio.text}</p>
-                </div>
-            ))}
+  const closeModal = () => {
+    setSelectedPortfolio(null);
+    setModalOpen(false);
+  };
 
-        {modalOpen && selectedPortfolio && (
-            <div className={style.modal}>
-                <div className={style.modalContent}>
-                    {selectedPortfolio.image && <img src={selectedPortfolio.image} alt={selectedPortfolio.text} />}
-                    {selectedPortfolio.video && <video autoPlay muted loop playsInline>
-                        <source src={selectedPortfolio.video} type="video/mp4" />
-                    </video>}
-                    <p>{selectedPortfolio.text}</p>
-                    <button onClick={closeModal}>Cerrar</button>
-                </div>
+  const groupedPortfolios = portfolios.reduce(
+    (acc, portfolio, index) => {
+      const groupIndex = Math.floor(index / 4);
+      acc[groupIndex] = acc[groupIndex] || [];
+      acc[groupIndex].push(portfolio);
+      return acc;
+    },
+    []
+  );
+
+  const limitedGroups = groupedPortfolios.slice(0, 2);
+
+  return (
+    <div className={style.div}>
+      <h2>Trabajos realizados</h2>
+
+      {limitedGroups.map((group, groupIndex) => (
+        <div key={groupIndex} className={style.portfolioGroup}>
+          {group.map((portfolio) => (
+            <div key={portfolio._id} onClick={() => openModal(portfolio)} className={style.portfolio}>
+              <div className={style.overlay}>
+                <p>{portfolio.text}</p>
+              </div>
+              {portfolio.image && (
+                <img src={portfolio.image} alt={portfolio.text} className={style.portfolioImg} />
+              )}
+              {portfolio.video && (
+                <video autoPlay muted loop playsInline className={style.portfolioVideo}>
+                  <source src={portfolio.video} type="video/mp4" />
+                </video>
+              )}
             </div>
-        )}
+          ))}
         </div>
-    );
-}
+      ))}
+
+      {modalOpen && selectedPortfolio && (
+        <div className={style.modal}>
+          <div className={style.modalContent}>
+            {selectedPortfolio.image && <img src={selectedPortfolio.image} alt={selectedPortfolio.text} />}
+            {selectedPortfolio.video && (
+              <video autoPlay muted loop playsInline>
+                <source src={selectedPortfolio.video} type="video/mp4" />
+              </video>
+            )}
+            <p>{selectedPortfolio.text}</p>
+            <button onClick={closeModal}>Cerrar</button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default Portfolio;
