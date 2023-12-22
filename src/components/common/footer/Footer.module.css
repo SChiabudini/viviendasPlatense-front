@@ -1,0 +1,55 @@
+.div{
+    box-shadow: 0 -3px 7px rgba(0,0,0,0.7);
+    border-top: 3px #F63536 solid;
+    background-color: #F63536;
+    margin-top: 4rem;
+}
+
+.content{
+    width: 1140px;
+    margin: 2rem auto 0;
+    padding: 1rem 0;
+    text-align: left;
+}
+
+.content h2{
+    width: 48%;
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 0.1rem;
+    margin-top: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+}
+
+.links{
+    display: flex;
+    grid-gap: 1rem;
+}
+
+.column{
+    width: calc(50% - 1rem);
+}
+
+.column p{
+    height: 35px;
+    margin: 1.5rem 0;
+}
+
+.column p img{
+    width: 1.5rem;
+    display: inline-block;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.column p a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+}
+
+.column p a:hover{
+    text-decoration: underline;
+}
