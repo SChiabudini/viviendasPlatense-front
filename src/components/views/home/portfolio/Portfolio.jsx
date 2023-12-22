@@ -63,15 +63,17 @@ const Portfolio = () => {
 
       {modalOpen && selectedPortfolio && (
         <div className={style.modal}>
+            
           <div className={style.modalContent}>
+            <button onClick={closeModal}>X</button>
+            <p>{selectedPortfolio.text}</p>
             {selectedPortfolio.image && <img src={selectedPortfolio.image} alt={selectedPortfolio.text} />}
             {selectedPortfolio.video && (
               <video autoPlay muted loop playsInline>
                 <source src={selectedPortfolio.video} type="video/mp4" />
               </video>
             )}
-            <p>{selectedPortfolio.text}</p>
-            <button onClick={closeModal}>Cerrar</button>
+            
           </div>
         </div>
       )}

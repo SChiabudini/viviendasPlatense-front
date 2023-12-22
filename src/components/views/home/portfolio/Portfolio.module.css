@@ -27,25 +27,44 @@
 }
 
 .modalContent {
-    background: white;
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    border-radius: 8px;
     text-align: center;
     width: 100%;
-    max-height: 90vh; /* Establece una altura máxima del 90% del viewport height */
+    height: 100%;
     overflow: auto; /* Agrega una barra de desplazamiento si el contenido excede la altura máxima */
 }
 
-.modalContent img {
-    width: 100%;
-    height: auto; /* Ajusta automáticamente la altura para mantener la proporción original */
-    max-height: 100%; /* Establece una altura máxima del 100% del contenedor */
+.modalContent img,
+.modalContent video {
+    max-height: 80vh; /* Máxima altura permitida (60% del viewport height) */
+    width: auto;
+    max-width: 100%;
+    object-fit: contain; /* Ajusta la imagen o video dentro del contenedor sin deformar */
+    display: block;
+    margin: 1rem auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.modalContent video {
-    width: 100%;
-    height: auto; /* Ajusta automáticamente la altura para mantener la proporción original */
-    max-height: 100%; /* Establece una altura máxima del 100% del contenedor */
+.modalContent p{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 3rem auto 1rem;
+    color: #0A499A;
+    padding-bottom: 1rem;
+}
+
+.modalContent button{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 24px;
+    border: none;
+    color: black;
+    font-weight: 300;
+    border-radius: 4px;
 }
 
 .portfolioImg{
