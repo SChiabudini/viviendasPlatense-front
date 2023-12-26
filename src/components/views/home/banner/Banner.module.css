@@ -1,0 +1,101 @@
+.banner{
+    width: 100%;
+    height: 500px;
+}
+
+.banner1{
+    height: 500px;
+}
+
+.banner1bg{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.banner1bg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner1render{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+}
+
+.banner1render img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner1logo{
+    width: 7rem;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 3;
+}
+
+.banner1text{
+    position: relative;
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 4;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner1text h3{
+    margin: 0;
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.banner1 .price{
+    margin: 0;
+    color: #FCDC5B;
+    font-size: 50px;
+    font-weight: 500;
+    border-bottom: white solid 2px;
+    width: 35%;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.banner1 .text{
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.banner .number{
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.banner1 p a{
+    text-decoration: none;
+    color: #FCDC5B;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.banner1 p a:hover{
+    text-decoration: underline;
+}
+

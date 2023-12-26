@@ -20,7 +20,7 @@ function App() {
   
   return (
     <div className="App">
-      <Header/>
+      <div className="header"><Header/></div>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/catalogo' element={<Catalogue/>}/>

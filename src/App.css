@@ -7,6 +7,11 @@
   pointer-events: none;
 }
 
+.header{
+  z-index: 9999;
+  position: relative;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

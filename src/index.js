@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import axios from 'axios';
 import store from "./redux/store.js";
 
-axios.defaults.baseURL = "http://localhost:3001/";
+axios.defaults.baseURL = "https://viviendasplatenseback.onrender.com/";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
