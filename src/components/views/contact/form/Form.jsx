@@ -94,7 +94,7 @@ const Form = () => {
     return (
         <div className={style.div}>
             <h3>Envianos tu consulta</h3>
-            {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
+            
             <form onSubmit={handleSubmit}>
                 <p className={style.label}><label htmlFor="name">Nombre*</label></p>
                 <p className={style.input}><input
@@ -136,6 +136,7 @@ const Form = () => {
                 ></textarea></p>
                 {touchedFields.message && errors.message && <p className={style.error}>{errors.message}</p>}
                 <div className={style.formButton}><button type="submit" disabled={!isFormValid()}>Enviar</button></div>
+                {successMessage && <p style={{ color: 'white', textAlign: 'center' }}>{successMessage}</p>}
             </form>
         </div>
     )

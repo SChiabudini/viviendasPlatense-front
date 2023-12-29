@@ -5,8 +5,8 @@ const validation = (userInput) => {
         errors.number = 'Debe ingresar un número';
     }
 
-    if (userInput.number.length > 10) {
-        errors.number = 'El número no debe superar los 10 caracteres';
+    if (userInput.number.length > 15) {
+        errors.number = 'El número no debe superar los 15 caracteres';
     }
     
     if (!/^\d+$/.test(userInput.number)) {
