@@ -5,7 +5,8 @@ import style from "./Banner.module.css";
 const Banner = () => {
     return(
         <div className={style.banner}>
-            <Carousel showThumbs={false} showStatus={false}>
+            <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay={true} interval={5000} transitionTime={1000}>
+
                     <div className={style.banner1}>
                         <div className={style.banner1bg}><img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703522636/viviendasPlatense/resources/banners/1/jr5cnhbraavflsjjdnh9.svg" alt=""/></div>
                         <div className={style.banner1render}><img  src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703519379/viviendasPlatense/resources/banners/1/szsgpjraede7tltrz99f.jpg" alt="Casa disponible en promoción"/></div>
@@ -36,8 +37,27 @@ const Banner = () => {
                     </div>
 
                     <div className={style.banner3}>
-                        <img src="" alt=""/>
-                        <p>Div 3</p>
+                        <div className={style.banner3bg}></div>
+                        <div className={style.content}>
+                            <h3>Viviendas Platense</h3>
+                            <div className={style.images}>
+                                <div className={style.imageContainer}>
+                                    <div className={style.imageOverlay}></div>
+                                    <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1702923780/viviendasPlatense/houses/15%20Americana%20-%20Monoambiente/mbkiakxb5ucxhifvazk2.jpg" alt="Modelo Americano"/>
+                                    <p>Americana</p>
+                                </div>
+                                <div className={style.imageContainer}>
+                                    <div className={style.imageOverlay}></div>
+                                    <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703024124/viviendasPlatense/houses/22%2C5%20Americana%20-%201%20Dormitorio/rhktmrz63dvzbfflohws.jpg" alt="Modelo Cube"/>
+                                    <p>Cube</p>
+                                </div>
+                                <div className={style.imageContainer}>
+                                    <div className={style.imageOverlay}></div>
+                                    <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703023554/viviendasPlatense/houses/30%20Minimalista%20-%202%20Dormitorios/spyxi8skcac1weecmaeg.jpg" alt="Modelo 2 Plantas"/>
+                                    <p>2 Plantas</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
             </Carousel>
         </div>

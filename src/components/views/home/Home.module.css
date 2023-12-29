@@ -1,10 +1,38 @@
-.whatsapp{
-    width: 5rem;
+.icons.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.icons {
     position: fixed;
     bottom: 0.5rem;
     right: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.whatsapp{
+    width: 5rem;
+    margin-top: 0.5rem;
 }
 
 .whatsapp img{
     width: 5rem;
+}
+
+.scrollToTop {
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.5;
+    margin-right: 0.25rem;
+}
+
+.scrollToTop:hover {
+    opacity: 1;
+}
+
+.scrollToTop img {
+    width: 3rem;
 }
