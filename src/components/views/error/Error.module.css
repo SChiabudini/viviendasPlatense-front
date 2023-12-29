@@ -1,0 +1,47 @@
+.div {
+    position: relative;
+    padding: 2rem;
+}
+
+.div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    background: url(https://res.cloudinary.com/dwemuzjbb/image/upload/v1703868420/viviendasPlatense/resources/bswpki8gdwzlveuxcmri.svg) no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5; /* Cambia el valor según la opacidad deseada */
+    z-index: -1;
+}
+
+.div p{
+    color: #F43536;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    font-size: 48px;
+    margin: 0.5rem auto;
+}
+
+.div p.second{
+    font-weight: 600;
+    font-size: 36px;
+    padding-bottom: 2.5rem;
+    border-bottom: 2px solid #F43536;
+    width: 60%;
+}
+
+.div .image{
+    width: 15rem;
+    margin: 3rem auto;
+}
+
+.div a{
+    background-color: #F43536;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
