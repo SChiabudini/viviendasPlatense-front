@@ -27,3 +27,15 @@ h1 img{
     margin-right: 0;
     line-height: 75px;
 }
+
+@media (max-width: 1025px){
+    .content{
+        width: 90%;
+    }
+}
+
+@media (max-width: 721px){
+    .content{
+        width: 90%;
+    }
+}

@@ -53,3 +53,21 @@
 .column p a:hover{
     text-decoration: underline;
 }
+
+@media (max-width: 1025px){
+    .content{
+        width: 90%;
+    }
+}
+
+@media (max-width: 721px){
+    .content{
+        width: 90%;
+    }
+
+    .links{
+        display: block;
+    }
+    
+
+}
