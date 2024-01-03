@@ -50,4 +50,8 @@
     .article{
         width: 100%;
     }
+
+    .form{
+        margin-bottom: 2rem;
+    }
 }

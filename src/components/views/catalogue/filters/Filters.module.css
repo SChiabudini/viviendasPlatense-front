@@ -24,3 +24,21 @@
     display: inline;
     margin-left: 1.5rem;
 }
+
+@media (max-width: 1025px){
+
+    .div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .div .filter{
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 721px){
+    .div .filter{
+        width: 100%;
+    }
+}

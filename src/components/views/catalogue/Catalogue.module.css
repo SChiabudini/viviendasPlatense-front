@@ -13,3 +13,27 @@
     flex-wrap: wrap;    
     grid-gap: 1rem;
 }
+
+@media (max-width: 1025px){
+    .div{
+        width: 90%;
+    }
+
+    .card{
+        width: calc(33% - 0.75rem);
+    }
+}
+
+@media (max-width: 721px){
+    .div{
+        width: 90%;
+    }
+
+    .cards{
+        display: block;
+    }
+
+    .card{
+        width: 100%;
+    }
+}
