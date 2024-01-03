@@ -27,3 +27,27 @@
     margin-right: 0;
     margin-left: auto;
 }
+
+@media (max-width: 1025px){
+    .div{
+        width: 90%;
+    }
+}
+
+@media (max-width: 721px){
+    .div{
+        width: 90%;
+    }
+
+    .heading {
+        width: 100%;
+    }
+
+    .content {
+        display: block;
+     }
+
+    .article{
+        width: 100%;
+    }
+}

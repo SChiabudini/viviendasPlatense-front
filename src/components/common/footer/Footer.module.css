@@ -65,9 +65,20 @@
         width: 90%;
     }
 
+    .content h2{
+        width: 100%;
+    }
+
     .links{
         display: block;
     }
     
+    .column{
+        width: 100%;
+    }
+
+    .column p{
+        margin: 2rem 0;
+    }
 
 }
