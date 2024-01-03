@@ -1,5 +1,5 @@
 .div{
-    height: 650px;
+    height: 100%;
     width: 100%;
     position: relative;
 }
@@ -11,6 +11,7 @@
 
 .bgImg img{
     width: 100%;
+    height: auto;
 }
 
 .content{
