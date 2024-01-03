@@ -1,7 +1,16 @@
 .div{
-    background-image: url("https://res.cloudinary.com/dwemuzjbb/image/upload/v1703097578/viviendasPlatense/resources/ggezzfw4fnmswbgcxpxb.jpg");
-    background-repeat: no-repeat;
     height: 650px;
+    width: 100%;
+    position: relative;
+}
+
+.div .bgImg{
+    position: absolute;
+    z-index: 1;
+}
+
+.bgImg img{
+    width: 100%;
 }
 
 .content{
@@ -10,6 +19,8 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .image{

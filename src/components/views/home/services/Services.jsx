@@ -3,6 +3,7 @@ import style from './Services.module.css';
 const Services = () => {
     return(
         <div className={style.div}>
+            <div className={style.bgImg}><img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703097578/viviendasPlatense/resources/ggezzfw4fnmswbgcxpxb.jpg" alt=""/></div>
             <div className={style.content}>
                 <div className={style.image}><img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703097726/viviendasPlatense/resources/runhzi5qcoiicsdtrfdv.svg" alt="Viviendas Platense"/></div>
                 <div className={style.info}>
