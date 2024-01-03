@@ -43,17 +43,24 @@ const Detail = () => {
 
             <div className={style.info}>
                 <h2>{product.type}</h2>
-                <p>- {product.size} m<sup>2</sup></p>
-                <p>- {product.rooms}</p>
-                <p>- Descripción:</p>
-                <ul className={style.ul}> 
-                    {product.description?.map((description) => (
-                        <li className={style.li}>{description}</li>
-                    ))}
-                </ul>
-                <p className={style.price}>${formattedPrice} <span className={style.contado}>(contado)</span></p>
-                <p className={style.whatsapp}><img src={whatsapp} alt=""/><a href={whatsappMessage} target="_blank" rel="noopener noreferrer">Consultanos por este modelo</a></p>
-                <p className={style.back}><NavLink to="/catalogo">Volver al catálogo</NavLink></p>
+                <div className={style.infoContent}>
+                    <div className={style.infoText}>
+                        <p>- {product.size} m<sup>2</sup></p>
+                        <p>- {product.rooms}</p>
+                        <p>- Descripción:</p>
+                        <ul className={style.ul}> 
+                        {product.description?.map((description) => (
+                            <li className={style.li}>{description}</li>
+                        ))}
+                        </ul>
+                    </div>
+
+                    <div className={style.infoButton}>
+                        <p className={style.price}>${formattedPrice} <span className={style.contado}>(contado)</span></p>
+                        <p className={style.whatsapp}><img src={whatsapp} alt=""/><a href={whatsappMessage} target="_blank" rel="noopener noreferrer">Consultanos por este modelo</a></p>
+                        <p className={style.back}><NavLink to="/catalogo">Volver al catálogo</NavLink></p>
+                    </div>
+                </div>
             </div>
         </div>
     );

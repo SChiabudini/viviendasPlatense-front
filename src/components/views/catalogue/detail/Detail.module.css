@@ -104,3 +104,55 @@
     font-family: Open Sans, sans-serif;
     font-weight: 300;
 }
+
+@media (max-width: 1025px){
+    .div{
+        width: 90%;
+        display: block;
+    }
+
+    .carousel{
+        width: 100%;
+    }
+    
+    .info{
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+    .info h2{
+        width: 48%;
+    }
+
+    .infoContent{
+        display: flex;
+    }
+
+    .infoText, .infoButton{
+        width: 50%;
+    }
+
+    .back{
+        text-align: right;
+    }
+}
+
+@media (max-width: 721px){
+    
+    .info h2{
+        width: 100%;
+    }
+
+    .infoContent{
+        display: block;
+    }
+
+    .infoText, .infoButton{
+        width: 100%;
+    }
+
+    .back{
+        text-align: center;
+    }
+
+}
