@@ -18,6 +18,7 @@
   .slide {
     position: relative;
     text-align: left;
+    height: 260px;
   }
   
   .slide a {
