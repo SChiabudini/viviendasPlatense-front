@@ -10,9 +10,25 @@
 .NavLink:hover, .selected{
     color: #F43536;
     border-bottom: solid 2px #F43536;
-    text-decoration: none;
-    margin-left: 2rem;
-    font-weight: 500;
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
+}
+
+@media (max-width: 721px){
+    .div{
+        width: 100%;
+        background-color: #F3F3F3;
+        box-shadow: inset 1px 4px 10px -6px rgba(0, 0, 0, 0.7);
+    }
+
+    .NavLink{
+        display: block;
+        margin-left: 0;
+        height: 3rem;
+        line-height: 3.5rem;
+        padding-bottom: none;
+    }
+
+    .NavLink:hover, .selected{
+        border: none;
+        background-color: rgba(0, 0, 0, 0.03);
+    }
 }

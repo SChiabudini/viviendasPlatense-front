@@ -5,7 +5,7 @@ import style from './Header.module.css';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 720);
 
     const toggleMenu = () => {
@@ -16,15 +16,11 @@ const Header = () => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 720);
         };
-
-        // Attach event listener for window resize
         window.addEventListener('resize', handleResize);
-
-        // Clean up the event listener on component unmount
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, []); // Empty dependency array ensures that this effect runs only once on mount
+    }, []);
 
     return (
         <div>
@@ -41,7 +37,7 @@ const Header = () => {
                         </div>
                     </div>
                     {menuOpen ? (
-                        <div className={style.nav}><Nav /></div>
+                        <div className={style.nav} onClick={toggleMenu}><Nav /></div>
                     ) : (
                         <div></div>
                     )}
