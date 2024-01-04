@@ -65,7 +65,7 @@ const Portfolio = () => {
         <div className={style.modal}>
             
           <div className={style.modalContent}>
-            <button onClick={closeModal}>X</button>
+     
             <p>{selectedPortfolio.text}</p>
             {selectedPortfolio.image && <img src={selectedPortfolio.image} alt={selectedPortfolio.text} />}
             {selectedPortfolio.video && (
@@ -73,7 +73,7 @@ const Portfolio = () => {
                 <source src={selectedPortfolio.video} type="video/mp4" />
               </video>
             )}
-            
+            <button onClick={closeModal}>X</button>
           </div>
         </div>
       )}
