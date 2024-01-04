@@ -87,4 +87,15 @@
     color: #666666;
   }
 
-  
+@media (max-width: 1025px){
+
+    .div{
+        width: 100%;
+    }
+}
+
+@media (max-width: 721px){
+    .div{
+        width: 90%;
+    }
+}
