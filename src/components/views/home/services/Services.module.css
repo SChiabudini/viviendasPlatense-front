@@ -85,32 +85,35 @@
 
 @media (max-width: 721px){
 
+
+    .div{
+        width: 100%;
+        height: auto;
+    }
+
     .content{
         width: 90%;
-        position: relative;
+        height: 650px;
+        flex-direction: column;
     }
 
-    .bgImg{
-        position: absolute;
-        z-index: 1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 200%;
-
+    .image{
+        width: 100%;
+        margin-left: 0;
     }
 
-    .content .image{
-        display: none;
+    .image img{
+        width: 10rem;
     }
 
     .info{
         width: 100%;
         text-align: center;
+        margin-top: 3rem;
     }
 
     .info h2{
-        width: 100%;
-        margin-top: 0;
+        width: 80%;
+        margin: 0 auto 1rem;
     }
 }
