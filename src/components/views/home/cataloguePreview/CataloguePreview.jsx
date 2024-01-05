@@ -1,6 +1,7 @@
 import style from './CataloguePreview.module.css';
 import { useSelector } from "react-redux";
 import { NavLink } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,11 +9,23 @@ import "slick-carousel/slick/slick-theme.css";
 const CataloguePreview = () => {
   const { productsCopy } = useSelector((state) => state.products);
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 720);
+
+  useEffect(() => {
+      const handleResize = () => {
+          setIsMobile(window.innerWidth <= 720);
+      };
+      window.addEventListener('resize', handleResize);
+      return () => {
+          window.removeEventListener('resize', handleResize);
+      };
+  }, []);
+
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: isMobile ? 1 : 4,
     slidesToScroll: 1
   };
 

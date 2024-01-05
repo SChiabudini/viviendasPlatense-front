@@ -98,4 +98,12 @@
     .div{
         width: 90%;
     }
+
+    .imageOverlay {
+      width: 1000%;
+    }
+    
+    .slide img {
+      width: 100%;
+    }
 }
