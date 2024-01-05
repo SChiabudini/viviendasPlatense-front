@@ -20,6 +20,7 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
     z-index: 2;
 }
@@ -40,6 +41,10 @@
     box-sizing: border-box;
 }
 
+.info{   
+    padding-left: 0;
+}
+
 .info h2{
     color: #FCDC5B;
     font-size: 36px;
@@ -58,17 +63,54 @@
 
     .content{
         width: 90%;
+        height: 420px;
+    }
+
+    .image{
+        margin-left: 1rem;
+    }
+    
+    .image img{
+        width: 15rem;
+    }
+    
+    .info h2{
+        font-size: 28px;
+    }
+    
+    .info p{
+        font-size: 16px;
     }
 }
 
 @media (max-width: 721px){
+
     .content{
         width: 90%;
+        position: relative;
     }
+
+    .bgImg{
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200%;
+
+    }
+
+    .content .image{
+        display: none;
+    }
+
     .info{
-        width: 50%;
-        text-align: left;
-        padding-left: 0;
-        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+    }
+
+    .info h2{
+        width: 100%;
+        margin-top: 0;
     }
 }
