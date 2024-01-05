@@ -39,20 +39,28 @@
 
 @media (max-width: 1025px){
 
+    .icons {
+        right: 1rem;
+    }
+
     .whatsapp{
-        width: 3rem;
+        width: 4rem;
     }
     
     .whatsapp img{
-        width: 3rem;
+        width: 4rem;
     }
 
     .scrollToTop img {
-        width: 2rem;
+        width: 3rem;
     }
 }
 
 @media (max-width: 721px){
+
+    .icons {
+        right: 0.5rem;
+    }
 
     .scrollToTop {
         display: none;
