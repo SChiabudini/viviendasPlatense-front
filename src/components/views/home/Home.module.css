@@ -36,3 +36,26 @@
 .scrollToTop img {
     width: 3rem;
 }
+
+@media (max-width: 1025px){
+
+    .whatsapp{
+        width: 3rem;
+    }
+    
+    .whatsapp img{
+        width: 3rem;
+    }
+
+    .scrollToTop img {
+        width: 2rem;
+    }
+}
+
+@media (max-width: 721px){
+
+    .scrollToTop {
+        display: none;
+    }
+
+}
