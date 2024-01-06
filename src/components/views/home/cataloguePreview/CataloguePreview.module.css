@@ -100,7 +100,8 @@
     }
 
     .imageOverlay {
-      width: 1000%;
+      left: 0;
+      width: 100%;
     }
     
     .slide img {
