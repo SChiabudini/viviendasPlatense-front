@@ -29,3 +29,11 @@
 .map{
     margin-bottom: 2rem;
 }
+
+@media (max-width: 721px){
+    
+    .div p a{
+        font-size: 14px;
+    }
+
+}

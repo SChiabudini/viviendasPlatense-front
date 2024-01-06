@@ -80,3 +80,18 @@ form button:disabled{
 .formButton{
     text-align: right;
 }
+
+@media (max-width: 721px){
+    .div h3{
+        font-size: 18px;
+    }
+
+    form button{
+        font-size: 14px;
+        letter-spacing: 0.1rem;
+        font-weight: 400;
+        border-radius: 5px;
+        padding: 0.75rem 2.5rem;
+    }
+
+}
