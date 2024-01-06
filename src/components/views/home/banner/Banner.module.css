@@ -84,7 +84,7 @@
     font-weight: 500;
 }
 
-.banner .number{
+.banner1 .number{
     margin: 0;
     margin-top: 2rem;
 }
@@ -231,7 +231,7 @@
     width: calc(100% - 0.6rem);
     height: calc(100% - 0.6rem);
     background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,0) 70%, rgba(0,0,0,0.8) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 70%, rgba(0,0,0,0.8) 100%);
     z-index: 2;
   }
 
@@ -327,5 +327,25 @@ background: linear-gradient(180deg, rgba(0,0,0,0) 70%, rgba(0,0,0,0.8) 100%);
 
     .banner1 .price{
         width: 53%;
+    }
+
+    .banner1 .number{
+        margin-top: 1rem;
+    }
+
+    .banner3 .images{
+        flex-direction: column;
+    }
+
+    .banner3 h3{
+        font-size: 22px;
+        margin: 0 0 1.5rem;
+    }
+
+    .banner3 .imageContainer{
+        padding: 0.3rem;
+        width: 100%;
+        height: 9rem;
+        margin: 0 auto;
     }
 }
