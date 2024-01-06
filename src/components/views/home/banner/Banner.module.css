@@ -154,6 +154,7 @@
 .banner2 .textBottom{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin-top: 5rem;
 }
 
@@ -243,4 +244,88 @@ background: linear-gradient(180deg, rgba(0,0,0,0) 70%, rgba(0,0,0,0.8) 100%);
     position: relative;
     z-index: 3;
     letter-spacing: 0.1rem;
+}
+
+@media (max-width: 1025px){
+
+    .banner{
+        height: 400px;
+    }
+    
+    .banner1, .banner2, .banner3{
+        height: 400px;
+    }
+
+    .banner1text{
+        width: 90%;
+    }
+
+    .banner1text h3{
+        font-size: 40px;
+    }
+    
+    .banner1 .price{
+        font-size: 40px;
+    }
+    
+    .banner1 .text{
+        font-size: 20px;
+    }
+    
+    .banner1 p a{
+        font-size: 18px;
+    }
+
+    .banner2 .content{
+        width: 90%;
+    }
+
+    .banner2 .contentImg{
+        height: 320px;
+        left: 0;
+    }
+
+    .banner2 .contentText{
+        width: 50%;
+    }
+
+    .banner2 .textBlue{
+        font-size: 20px;
+    }
+
+    .banner2 .textBottom{
+        margin-top: 2rem;
+    }
+    
+    .banner2 .textBottom p{
+        font-size: 14px;
+    }
+    
+    .banner2 .textRed{
+        font-size: 20px;
+    }
+
+    .banner3 .content{
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 721px){
+    .banner{
+        height: 600px;
+    }
+    
+    .banner1, .banner2, .banner3{
+        height: 600px;
+    }
+
+    .banner1text{
+        padding-top: 3rem;
+        justify-content: flex-start;
+    }
+
+    .banner1 .price{
+        width: 53%;
+    }
 }

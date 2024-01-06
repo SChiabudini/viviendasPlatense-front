@@ -69,7 +69,7 @@ const Portfolio = () => {
             <p>{selectedPortfolio.text}</p>
             {selectedPortfolio.image && <img src={selectedPortfolio.image} alt={selectedPortfolio.text} />}
             {selectedPortfolio.video && (
-              <video autoPlay muted loop playsInline>
+              <video autoPlay loop playsInline>
                 <source src={selectedPortfolio.video} type="video/mp4" />
               </video>
             )}
