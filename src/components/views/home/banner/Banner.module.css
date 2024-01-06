@@ -333,6 +333,10 @@
         margin-top: 1rem;
     }
 
+    .banner2 .content{
+        width: 100%;
+    }
+
     .banner2 .vector{
         width: 160%;
     }
@@ -345,7 +349,8 @@
     
     .banner2 .contentText{
         position: static;
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
     }
     
     .banner2 .textBlue{
