@@ -84,6 +84,14 @@
 
 @media (max-width: 721px){
 
+    .div{
+        height: 650px;
+    }
+
+    .div .bgImg{
+        height: 650px;
+    }
+
     .content{
         width: 90%;
         height: 650px;
@@ -114,6 +122,7 @@
         width: 80%;
         margin: 0 auto 1rem;
         font-size: 24px;
+        color: red;
     }
     
     .info p{
