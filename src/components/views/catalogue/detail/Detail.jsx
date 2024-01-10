@@ -1,6 +1,6 @@
 import { useParams, NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { getProductById } from '../../../../redux/productActions';
+import { getProducts, getProductById } from '../../../../redux/productActions';
 import { useState, useEffect } from 'react';
 import style from "./Detail.module.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -11,11 +11,18 @@ const Detail = () => {
     const { id } = useParams();
     const dispatch = useDispatch();
     const [product, setProduct] = useState({});
-    const { selectedProduct } = useSelector((state) => state.products);
+    const { products, selectedProduct } = useSelector((state) => state.products);
 
     useEffect(() => {
-        dispatch(getProductById(id));
-    }, [dispatch, id]);
+        dispatch(getProducts());
+    }, [dispatch]);
+
+    useEffect(() => {
+        if(products){
+            
+            dispatch(getProductById(id));
+        }
+    }, [dispatch, id, products]);
 
     useEffect(() => {
         if (selectedProduct) {
