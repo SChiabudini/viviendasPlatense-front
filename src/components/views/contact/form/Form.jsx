@@ -1,9 +1,11 @@
+import React from 'react';
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import validation from './validation';
 import style from './Form.module.css';
 
 const Form = () => {
+
     const initialUserInput = {
         name: '',
         number: '',
@@ -52,9 +54,8 @@ const Form = () => {
     };
 
     const sendEmail = () => {
-        // Configura el servicio, plantilla y datos
-        const serviceId = 'service_g8vbcwi';
-        const templateId = 'template_cne2qyk';
+        const serviceId = process.env.REACT_APP_EMAIL_SERVICE_ID;
+        const templateId = process.env.REACT_APP_EMAIL_TEMPLATE_ID;
 
         emailjs.send(serviceId, templateId, userInput).then(
             (response) => {
@@ -82,11 +83,8 @@ const Form = () => {
 
         if (isFormValid()) {
             console.log('Formulario válido:', userInput);
-
-            // Llama a la función para enviar el correo electrónico
             sendEmail();
         } else {
-            // El formulario no es válido, puedes manejarlo de alguna manera
             console.log('Formulario inválido');
         }
     };
@@ -100,7 +98,7 @@ const Form = () => {
                 <p className={style.input}><input
                     name="name"
                     type="text"
-                    placeholder='Debe contener entre 6 y 30 caracteres'
+                    placeholder='Debe contener entre 3 y 30 caracteres'
                     value={userInput.name}
                     onChange={handleChange}
                     onBlur={handleBlur}
