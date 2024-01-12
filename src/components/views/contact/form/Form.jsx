@@ -53,6 +53,8 @@ const Form = () => {
         return !isEmptyField && !hasError;
     };
 
+    const [isSending, setIsSending] = useState(false);
+
     const sendEmail = () => {
         const serviceId = process.env.REACT_APP_EMAIL_SERVICE_ID;
         const templateId = process.env.REACT_APP_EMAIL_TEMPLATE_ID;
@@ -75,7 +77,9 @@ const Form = () => {
             (error) => {
                 console.error('Error al enviar el correo electrónico:', error);
             }
-        );
+        ).finally(() => {
+            setIsSending(false); // Indicar que ha terminado el envío, independientemente del resultado
+        });
     };
 
     const handleSubmit = (event) => {
@@ -133,7 +137,11 @@ const Form = () => {
                     onBlur={handleBlur}
                 ></textarea></p>
                 {touchedFields.message && errors.message && <p className={style.error}>{errors.message}</p>}
-                <div className={style.formButton}><button type="submit" disabled={!isFormValid()}>Enviar</button></div>
+                <div className={style.formButton}>
+                    <button type="submit" disabled={!isFormValid() || isSending}>
+                        {isSending ? 'Enviando...' : 'Enviar'}
+                    </button>
+                </div>
                 {successMessage && <p style={{ color: 'white', textAlign: 'center' }}>{successMessage}</p>}
             </form>
         </div>
