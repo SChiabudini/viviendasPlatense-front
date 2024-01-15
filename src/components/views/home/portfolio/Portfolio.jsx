@@ -3,6 +3,14 @@ import { useEffect, useState } from "react";
 import { getPortfolios } from "../../../../redux/portfolioActions";
 import style from "./Portfolio.module.css";
 
+const shuffleArray = (array) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+};
+
 const Portfolio = () => {
   const dispatch = useDispatch();
 
@@ -25,7 +33,9 @@ const Portfolio = () => {
     setModalOpen(false);
   };
 
-  const groupedPortfolios = portfolios.reduce(
+  const shuffledPortfolios = shuffleArray([...portfolios]);
+
+  const groupedPortfolios = shuffledPortfolios.reduce(
     (acc, portfolio, index) => {
       const groupIndex = Math.floor(index / 4);
       acc[groupIndex] = acc[groupIndex] || [];
