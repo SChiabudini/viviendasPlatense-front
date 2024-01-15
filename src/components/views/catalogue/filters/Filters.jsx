@@ -8,7 +8,8 @@ const Filters = () => {
     const { products } = useSelector((state) => state.products);
 
     const uniqueTypes = [...new Set(products.map((product) => product.type))];
-    const uniqueRooms = [...new Set(products.map((product) => product.rooms))];
+    const uniqueRooms = [...new Set(products.map((product) => product.rooms).filter(room => room !== undefined))];
+
     
     const handleFilterType = (event) => {
         dispatch(filterByType(event.target.value));
@@ -23,6 +24,8 @@ const Filters = () => {
         dispatch(orderByPrice(event.target.value));
     }
     
+    console.log(uniqueRooms);
+
     return(
         <div className={style.div}>
             <div className={style.filter}>

@@ -53,7 +53,7 @@ const Detail = () => {
                 <div className={style.infoContent}>
                     <div className={style.infoText}>
                         <p>- {product.size} m<sup>2</sup></p>
-                        <p>- {product.rooms}</p>
+                        {product.rooms && <p>- {product.rooms}</p>}
                         <p>- Descripción:</p>
                         <ul className={style.ul}> 
                         {product.description?.map((description) => (
