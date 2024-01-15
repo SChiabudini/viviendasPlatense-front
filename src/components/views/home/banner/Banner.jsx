@@ -23,7 +23,7 @@ const Banner = () => {
 
                     <div className={style.banner1}>
                         <div className={style.banner1bg}><img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703522636/viviendasPlatense/resources/banners/1/jr5cnhbraavflsjjdnh9.svg" alt=""/></div>
-                        <div className={style.banner1render}><img  src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703519379/viviendasPlatense/resources/banners/1/szsgpjraede7tltrz99f.jpg" alt="Casa disponible en promoción"/></div>
+                        <div className={style.banner1render}><img  src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1705327509/viviendasPlatense/houses/78%20Minimalista%20-%202%20Dormitorios/fc9i6cbzsaydx0jwf0fx.jpg" alt="Casa disponible en promoción"/></div>
                         <div className={style.banner1logo}><img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703097726/viviendasPlatense/resources/runhzi5qcoiicsdtrfdv.svg" alt=""/></div>
                         <div className={style.banner1text}>
                             <h3>PROMO</h3>
@@ -76,17 +76,17 @@ const Banner = () => {
                             <div className={style.images}>
                                 <div className={style.imageContainer}>
                                     <div className={style.imageOverlay}></div>
-                                    <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1702923780/viviendasPlatense/houses/15%20Americana%20-%20Monoambiente/mbkiakxb5ucxhifvazk2.jpg" alt="Modelo Americano"/>
+                                    <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1705326249/viviendasPlatense/houses/36%20Americana%20-%202%20Dormitorios/llnxhiy8wdvswnhvy7dk.jpg" alt="Modelo Americano"/>
                                     <p>Americana</p>
                                 </div>
                                 <div className={style.imageContainer}>
                                     <div className={style.imageOverlay}></div>
-                                    <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703024124/viviendasPlatense/houses/22%2C5%20Americana%20-%201%20Dormitorio/rhktmrz63dvzbfflohws.jpg" alt="Modelo Cube"/>
-                                    <p>Cube</p>
+                                    <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1705327817/viviendasPlatense/houses/79%2C5%20Minimalista%20-%203%20Dormitorios/mjfc1n6gaj9xtxkse7fu.jpg" alt="Modelo Minimalista"/>
+                                    <p>Minimalista</p>
                                 </div>
                                 <div className={style.imageContainer}>
                                     <div className={style.imageOverlay}></div>
-                                    <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703023554/viviendasPlatense/houses/30%20Minimalista%20-%202%20Dormitorios/spyxi8skcac1weecmaeg.jpg" alt="Modelo 2 Plantas"/>
+                                    <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1705328130/viviendasPlatense/houses/80%20Americana%20-%203%20Dormitorios/sbmd46nl0dxoxvwnrqyz.jpg" alt="Modelo 2 Plantas"/>
                                     <p>2 Plantas</p>
                                 </div>
                             </div>
