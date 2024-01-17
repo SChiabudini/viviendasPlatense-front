@@ -56,8 +56,8 @@ const Form = () => {
     const [isSending, setIsSending] = useState(false);
 
     const sendEmail = () => {
-        const serviceId = process.env.REACT_APP_EMAIL_SERVICE_ID;
-        const templateId = process.env.REACT_APP_EMAIL_TEMPLATE_ID;
+        const serviceId = 'service_g8vbcwi';
+        const templateId = 'template_cne2qyk';
 
         emailjs.send(serviceId, templateId, userInput).then(
             (response) => {
