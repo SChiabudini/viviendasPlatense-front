@@ -20,7 +20,7 @@ const Banner = () => {
 
     return(
         <div className={style.banner}>
-            <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay={false} interval={5000} transitionTime={1000} swipeable={!isMobile}>
+            <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay={true} interval={5000} transitionTime={1000} swipeable={!isMobile}>
 
                     <div className={style.banner1}>
                         <div className={style.banner1bg}><img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703522636/viviendasPlatense/resources/banners/1/jr5cnhbraavflsjjdnh9.svg" alt=""/></div>
