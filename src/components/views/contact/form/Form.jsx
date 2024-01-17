@@ -78,7 +78,7 @@ const Form = () => {
                 console.error('Error al enviar el correo electrónico:', error);
             }
         ).finally(() => {
-            setIsSending(false); // Indicar que ha terminado el envío, independientemente del resultado
+            setIsSending(false);
         });
     };
 

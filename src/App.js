@@ -15,7 +15,7 @@ function App() {
   const location = useLocation();
   const hideFooter = location.pathname.includes('/contacto');
   useEffect(() => {
-    emailjs.init('P0x0l4dlHg2Tkuo5I');
+    emailjs.init('jHN2Mp5dmm6EZ0QGV');
   }, [])
   
   return (
