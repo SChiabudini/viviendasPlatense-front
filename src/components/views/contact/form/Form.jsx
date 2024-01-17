@@ -56,6 +56,9 @@ const Form = () => {
     const [isSending, setIsSending] = useState(false);
 
     const sendEmail = () => {
+
+        setIsSending(true);
+
         const serviceId = 'service_z1c92mg';
         const templateId = 'template_s5611cg';
 
