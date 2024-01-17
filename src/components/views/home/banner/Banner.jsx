@@ -18,9 +18,27 @@ const Banner = () => {
         };
     }, []);
 
+    const handleTouchStart = (e) => {
+        this.startX = e.touches[0].clientX;
+        this.startY = e.touches[0].clientY;
+    };
+
+    const handleTouchMove = (e) => {
+        const deltaX = e.touches[0].clientX - this.startX;
+        const deltaY = e.touches[0].clientY - this.startY;
+
+        if (Math.abs(deltaY) > Math.abs(deltaX)) {
+            // Si el gesto es más vertical, permite el desplazamiento
+            return;
+        }
+
+        // Si el gesto es más horizontal, evita el desplazamiento del carousel
+        e.preventDefault();
+    };
+
     return(
-        <div className={style.banner}>
-            <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay={false} interval={5000} transitionTime={1000} swipeable={!isMobile}>
+        <div className={style.banner} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
+            <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay={false} interval={5000} transitionTime={1000}>
 
                     <div className={style.banner1}>
                         <div className={style.banner1bg}><img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703522636/viviendasPlatense/resources/banners/1/jr5cnhbraavflsjjdnh9.svg" alt=""/></div>
