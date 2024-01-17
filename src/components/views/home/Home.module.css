@@ -6,6 +6,7 @@
 
 .icons {
     position: fixed;
+    z-index: 9999;
     bottom: 0.5rem;
     right: 2rem;
     opacity: 0;
