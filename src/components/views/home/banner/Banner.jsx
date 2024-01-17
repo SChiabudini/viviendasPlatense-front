@@ -2,6 +2,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useState, useEffect } from 'react';
 import style from "./Banner.module.css";
+import { NavLink } from 'react-router-dom';
 
 const Banner = () => {
 
@@ -70,27 +71,29 @@ const Banner = () => {
                     </div>
 
                     <div className={style.banner3}>
-                        <div className={style.banner3bg}></div>
-                        <div className={style.content}>
-                            <h3>Viviendas Platense</h3>
-                            <div className={style.images}>
-                                <div className={style.imageContainer}>
-                                    <div className={style.imageOverlay}></div>
-                                    <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1705326249/viviendasPlatense/houses/36%20Americana%20-%202%20Dormitorios/llnxhiy8wdvswnhvy7dk.jpg" alt="Modelo Americano"/>
-                                    <p>Americana</p>
-                                </div>
-                                <div className={style.imageContainer}>
-                                    <div className={style.imageOverlay}></div>
-                                    <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1705327817/viviendasPlatense/houses/79%2C5%20Minimalista%20-%203%20Dormitorios/mjfc1n6gaj9xtxkse7fu.jpg" alt="Modelo Minimalista"/>
-                                    <p>Minimalista</p>
-                                </div>
-                                <div className={style.imageContainer}>
-                                    <div className={style.imageOverlay}></div>
-                                    <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1705328130/viviendasPlatense/houses/80%20Americana%20-%203%20Dormitorios/sbmd46nl0dxoxvwnrqyz.jpg" alt="Modelo 2 Plantas"/>
-                                    <p>2 Plantas</p>
+                        <NavLink to="/catalogo">
+                            <div className={style.banner3bg}></div>
+                            <div className={style.content}>
+                                <h3>Viviendas Platense</h3>
+                                <div className={style.images}>
+                                    <div className={style.imageContainer}>
+                                        <div className={style.imageOverlay}></div>
+                                        <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1705326249/viviendasPlatense/houses/36%20Americana%20-%202%20Dormitorios/llnxhiy8wdvswnhvy7dk.jpg" alt="Modelo Americano"/>
+                                        <p>Americana</p>
+                                    </div>
+                                    <div className={style.imageContainer}>
+                                        <div className={style.imageOverlay}></div>
+                                        <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1705327817/viviendasPlatense/houses/79%2C5%20Minimalista%20-%203%20Dormitorios/mjfc1n6gaj9xtxkse7fu.jpg" alt="Modelo Minimalista"/>
+                                        <p>Minimalista</p>
+                                    </div>
+                                    <div className={style.imageContainer}>
+                                        <div className={style.imageOverlay}></div>
+                                        <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1705328130/viviendasPlatense/houses/80%20Americana%20-%203%20Dormitorios/sbmd46nl0dxoxvwnrqyz.jpg" alt="Modelo 2 Plantas"/>
+                                        <p>2 Plantas</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </NavLink>  
                     </div>
             </Carousel>
         </div>
