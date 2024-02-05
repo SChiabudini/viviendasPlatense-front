@@ -40,8 +40,8 @@ const Banner = () => {
                             </>
                         ) : (
                             <>
-                                <div className={style.banner1bg}><img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703522636/viviendasPlatense/resources/banners/1/jr5cnhbraavflsjjdnh9.svg" alt=""/></div>
-                                <div className={style.banner1render}><img  src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1705597749/viviendasPlatense/resources/banners/1/fe9dwcwpckizlheaewji.jpg" alt="22,5 Americana - 1 Dormitorio - En promoción"/></div>
+                                <div className={style.banner1bg}><img src="https://res.cloudinary.com/dsmrctezd/image/upload/v1707175912/viviendasPlatense/resources/banners/1/qhz4yugxeko7llruidob.svg" alt=""/></div>
+                                <div className={style.banner1render}><img  src="https://res.cloudinary.com/dsmrctezd/image/upload/v1707175916/viviendasPlatense/resources/banners/1/xcmk0fsbkchbyfkbhbxp.jpg" alt="22,5 Americana - 1 Dormitorio - En promoción"/></div>
                                 <div className={style.banner1logo}><img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703097726/viviendasPlatense/resources/runhzi5qcoiicsdtrfdv.svg" alt=""/></div>
                                 <div className={style.banner1text}>
                                     <h3>TU CASA A SOLO</h3>
@@ -50,7 +50,7 @@ const Banner = () => {
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.text}>OFERTA PAGANDO AL CONTADO</p>
                                     <p className={style.number}>
-                                        <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1705693188/viviendasPlatense/resources/jslnqlqqo76xwukqlhke.svg" alt=""/>
+                                        <img src="https://res.cloudinary.com/dsmrctezd/image/upload/v1707175916/viviendasPlatense/resources/banners/1/pcnmetyslpoywjomfzrk.svg" alt=""/>
                                         <a href='https://wa.me/542216911442?text=Buenos%20d%C3%ADas,%20quisiera%20consultar%20por%20el%20modelo%20en%20promoci%C3%B3n.%20Muchas%20gracias.'>Envianos un WhatsApp </a>
                                         
                                     </p>
