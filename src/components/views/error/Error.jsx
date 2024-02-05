@@ -6,7 +6,7 @@ const Error = () => {
         <div className={style.div}>
             <p>ERROR 404</p>
             <p className={style.second}>Página no encontrada</p>
-            <div className={style.image}><img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703097726/viviendasPlatense/resources/runhzi5qcoiicsdtrfdv.svg" alt="Viviendas Platense"/></div>
+            <div className={style.image}><img src="https://res.cloudinary.com/dsmrctezd/image/upload/v1707176376/viviendasPlatense/resources/g5nt2fvnza5laaikgp8a.svg" alt="Viviendas Platense"/></div>
             <NavLink to="/">Volver</NavLink>
         </div>
     );
