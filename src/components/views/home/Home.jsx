@@ -38,11 +38,11 @@ const Home = () => {
         <div>
             <div className={`${style.icons} ${showIcons ? style.visible : ''}`}>
                 <div onClick={scrollToTop} className={style.scrollToTop}>
-                    <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703866809/viviendasPlatense/resources/k9vdfjvoviv2ay2udcws.svg" alt="Flecha hacia arriba" />
+                    <img src="https://res.cloudinary.com/dsmrctezd/image/upload/v1707176475/viviendasPlatense/resources/lussbxauqjdqt9yxnxos.svg" alt="Flecha hacia arriba" />
                 </div>
                 <div className={style.whatsapp}>
                     <a href="https://wa.me/542216911442" target="_blank" rel="noopener noreferrer">
-                        <img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703097804/viviendasPlatense/resources/fkxtj72xg3cr8khc7zym.svg" alt="" />
+                        <img src="https://res.cloudinary.com/dsmrctezd/image/upload/v1707178210/viviendasPlatense/resources/axrhfbkr0hfh4ra0afcl.svg" alt="Comunicate con nosotros" />
                     </a>
                 </div>
             </div>
