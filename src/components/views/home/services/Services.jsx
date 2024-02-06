@@ -18,13 +18,13 @@ const Services = () => {
     return(
         <div className={style.div}>
             {isMobile ? (
-                <div className={style.bgImg}><img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1704494370/viviendasPlatense/resources/jl7v8gjahudyfqfw0mli.jpg" alt=""/></div>
+                <div className={style.bgImg}><img src="https://res.cloudinary.com/dsmrctezd/image/upload/v1707176536/viviendasPlatense/resources/t9dhmnslbg4psxs0c4td.jpg" alt=""/></div>
             ) : (
-                <div className={style.bgImg}><img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703097578/viviendasPlatense/resources/ggezzfw4fnmswbgcxpxb.jpg" alt=""/></div>
+                <div className={style.bgImg}><img src="https://res.cloudinary.com/dsmrctezd/image/upload/v1707176442/viviendasPlatense/resources/imt7yrxb7bojgathtqas.jpg" alt=""/></div>
             )}
         
             <div className={style.content}>
-                <div className={style.image}><img src="https://res.cloudinary.com/dwemuzjbb/image/upload/v1703097726/viviendasPlatense/resources/runhzi5qcoiicsdtrfdv.svg" alt="Viviendas Platense"/></div>
+                <div className={style.image}><img src="https://res.cloudinary.com/dsmrctezd/image/upload/v1707176376/viviendasPlatense/resources/g5nt2fvnza5laaikgp8a.svg" alt="Viviendas Platense"/></div>
                 <div className={style.info}>
                     <h2>Servicios</h2>
                     <p>DISEÑOS PERSONALIZADOS</p>
