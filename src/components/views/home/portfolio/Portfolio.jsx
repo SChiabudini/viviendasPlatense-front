@@ -45,7 +45,7 @@ const Portfolio = () => {
     []
   );
 
-  const limitedGroups = groupedPortfolios.slice(0, 2);
+  const limitedGroups = groupedPortfolios.slice(0, 4);
 
   return (
     <div className={style.div}>
