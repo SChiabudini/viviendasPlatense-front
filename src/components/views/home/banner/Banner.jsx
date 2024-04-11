@@ -28,7 +28,8 @@ const Banner = () => {
                                 <div className={style.banner1text}>                                    
                                     <h3>PROMO ESPECIAL</h3>
                                     <p className={style.price}>15% OFF</p>
-                                    <p className={style.text}>Base de hormigón de regalo<br/>para los primeros dos cupos</p>
+                                    <p className={style.text}>Antes <span className={style.textPrice}>$4.386.000</span></p>
+                                    <p className={style.text}>Ahora <span className={style.textPrice}>$3.728.000</span></p>
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.text}>OFERTA PAGANDO AL CONTADO</p>
                                     <p className={style.number}>
