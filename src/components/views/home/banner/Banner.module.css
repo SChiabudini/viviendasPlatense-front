@@ -84,6 +84,12 @@
     font-weight: 500;
 }
 
+.banner1 .textPrice{
+    padding-left: 1rem;
+    color: #FCDC5B;
+    letter-spacing: 0.1rem; 
+}
+
 .banner1 .number{
     margin: 0;
     margin-top: 0.5rem;
