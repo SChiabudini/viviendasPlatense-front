@@ -48,6 +48,7 @@ const Banner = () => {
                                     <p className={style.price}>15% OFF</p>
                                     <p className={style.text}>Antes <span className={style.textPrice}>$4.386.000</span></p>
                                     <p className={style.text}>Ahora <span className={style.textPrice}>$3.728.000</span></p>
+                                    <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.text}>OFERTA PAGANDO AL CONTADO</p>
                                     <p className={style.number}>
                                         <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/1/whatsapp.svg" alt=""/>
