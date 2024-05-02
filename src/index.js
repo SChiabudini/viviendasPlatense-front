@@ -10,7 +10,7 @@ import store from "./redux/store.js";
 
 const apiUrl = process.env.REACT_APP_API_BASE_URL;
 
-axios.defaults.baseURL = apiUrl;
+axios.defaults.baseURL = 'https://viviendasplatenseback.onrender.com';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
