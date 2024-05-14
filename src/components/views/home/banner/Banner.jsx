@@ -27,9 +27,9 @@ const Banner = () => {
                             <>
                                 <div className={style.banner1text}>                                    
                                     <h3>PROMO ESPECIAL</h3>
-                                    <p className={style.price}>15% OFF</p>
-                                    <p className={style.text}>Antes <span className={style.textPrice}>$4.386.000</span></p>
-                                    <p className={style.text}>Ahora <span className={style.textPrice}>$3.728.000</span></p>
+                                    <p className={style.price}>20% OFF</p>
+                                    <p className={style.text}>Antes <span className={style.textPrice}>$4.163.000</span></p>
+                                    <p className={style.text}>Ahora <span className={style.textPrice}>$3.330.400</span></p>
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.text}>OFERTA PAGANDO AL CONTADO</p>
                                     <p className={style.number}>
@@ -37,18 +37,18 @@ const Banner = () => {
                                         <a href='https://wa.me/542216911442?text=Buenos%20d%C3%ADas,%20quisiera%20consultar%20por%20el%20modelo%20en%20promoci%C3%B3n.%20Muchas%20gracias.'>Envianos un WhatsApp </a>
                                         
                                     </p></div>
-                                <div className={style.banner1render}><img  src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/1/banner_1_img.jpg" alt="22,5 Americana - 1 Dormitorio - En promoción"/></div>
+                                <div className={style.banner1render}><img  src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/1/banner_1_img_2.jpg" alt="22,5 Americana - 1 Dormitorio - En promoción"/></div>
                             </>
                         ) : (
                             <>
                                 <div className={style.banner1bg}><img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/1/banner_1_bg.svg" alt=""/></div>
-                                <div className={style.banner1render}><img  src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/1/banner_1_img.jpg" alt="22,5 Americana - 1 Dormitorio - En promoción"/></div>
+                                <div className={style.banner1render}><img  src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/1/banner_1_img_2.jpg" alt="22,5 Americana - 1 Dormitorio - En promoción"/></div>
                                 <div className={style.banner1logo}><img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/logo.svg" alt=""/></div>
                                 <div className={style.banner1text}>
                                     <h3>PROMO ESPECIAL</h3>
-                                    <p className={style.price}>15% OFF</p>
-                                    <p className={style.text}>Antes <span className={style.textPrice}>$4.386.000</span></p>
-                                    <p className={style.text}>Ahora <span className={style.textPrice}>$3.728.000</span></p>
+                                    <p className={style.price}>20% OFF</p>
+                                    <p className={style.text}>Antes <span className={style.textPrice}>$4.163.000</span></p>
+                                    <p className={style.text}>Ahora <span className={style.textPrice}>$3.330.400</span></p>
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.text}>OFERTA PAGANDO AL CONTADO</p>
                                     <p className={style.number}>
