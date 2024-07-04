@@ -28,7 +28,7 @@ const Banner = () => {
                                 <div className={style.banner1text}>                                    
                                     <h3>PROMO ESPECIAL</h3>
                                     <p className={style.price}>BASE DE HORMIGÓN BONIFICADA</p>
-                                    <p className={style.text}><span className={style.textPrice}>$4.163.000</span></p>
+                                    <p className={style.text}><span className={style.textPrice}>$4.282.500</span></p>
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.text}>OFERTA PAGANDO AL CONTADO</p>
                                     <p className={style.number}>
@@ -46,7 +46,7 @@ const Banner = () => {
                                 <div className={style.banner1text}>
                                     <h3>PROMO ESPECIAL</h3>
                                     <p className={style.price}>BASE DE HORMIGÓN BONIFICADA</p>
-                                    <p className={style.text}><span className={style.textPrice}>$4.163.000</span></p>
+                                    <p className={style.text}><span className={style.textPrice}>$4.282.500</span></p>
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.text}>OFERTA PAGANDO AL CONTADO</p>
                                     <p className={style.number}>
@@ -103,7 +103,7 @@ const Banner = () => {
                                     <div className={style.imageContainer}>
                                         <div className={style.imageOverlay}></div>
                                         <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/catalogue/36%20Americana%20-%202%20Dormitorios/1.jpg" alt="Modelo Americano"/>
-                                        <p>Americana</p>
+                                        <p>Premium</p>
                                     </div>
                                     <div className={style.imageContainer}>
                                         <div className={style.imageOverlay}></div>
@@ -112,8 +112,8 @@ const Banner = () => {
                                     </div>
                                     <div className={style.imageContainer}>
                                         <div className={style.imageOverlay}></div>
-                                        <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/catalogue/80%20Americana%20-%203%20Dormitorios/1.jpg" alt="Modelo 2 Plantas"/>
-                                        <p>2 Plantas</p>
+                                        <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/catalogue/58%2C5%20Steel%20-%203%20Dormitorios/1.jpg" alt="Modelo 2 Plantas"/>
+                                        <p>Steel</p>
                                     </div>
                                 </div>
                             </div>
