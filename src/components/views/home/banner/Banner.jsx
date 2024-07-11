@@ -103,17 +103,17 @@ const Banner = () => {
                                     <div className={style.imageContainer}>
                                         <div className={style.imageOverlay}></div>
                                         <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/catalogue/36%20Americana%20-%202%20Dormitorios/1.jpg" alt="Modelo Americano"/>
-                                        <p>Premium</p>
+                                        <p>PREMIUM</p>
                                     </div>
                                     <div className={style.imageContainer}>
                                         <div className={style.imageOverlay}></div>
-                                        <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/catalogue/79%2C5%20Minimalista%20-%203%20Dormitorios/1.jpg" alt="Modelo Minimalista"/>
-                                        <p>Minimalista</p>
+                                        <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/3/eco.jpg" alt="Modelo Minimalista"/>
+                                        <p>ECO</p>
                                     </div>
                                     <div className={style.imageContainer}>
                                         <div className={style.imageOverlay}></div>
                                         <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/catalogue/58%2C5%20Steel%20-%203%20Dormitorios/1.jpg" alt="Modelo 2 Plantas"/>
-                                        <p>Steel</p>
+                                        <p>STEEL</p>
                                     </div>
                                 </div>
                             </div>
