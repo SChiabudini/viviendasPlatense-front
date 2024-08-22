@@ -16,7 +16,11 @@ const House = ({ id, type, size, price, image, rooms }) => {
                     <p className={style.title}>{size} {type} - {rooms}</p>
                     : <p className={style.title}>{size} {type}</p>
                 }
-                <p className={style.price}>${formattedPrice}</p>
+                {type === 'Steel' ?
+                    <p className={style.price}>USD {formattedPrice}</p> :
+                    <p className={style.price}>${formattedPrice}</p>
+                }
+                
             </NavLink>
         </div>
     );

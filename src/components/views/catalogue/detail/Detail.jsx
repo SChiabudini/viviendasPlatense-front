@@ -63,7 +63,10 @@ const Detail = () => {
                     </div>
 
                     <div className={style.infoButton}>
-                        <p className={style.price}>${formattedPrice} <span className={style.contado}>(contado)</span></p>
+                        {product.type === 'Steel' ?
+                            <p className={style.price}>USD {formattedPrice} <span className={style.contado}>(contado)</span></p>
+                            : <p className={style.price}>${formattedPrice} <span className={style.contado}>(contado)</span></p>
+                        }
                         <p className={style.whatsapp}><img src={whatsapp} alt=""/><a href={whatsappMessage} target="_blank" rel="noopener noreferrer">Consultanos por este modelo</a></p>
                         <p className={style.back}><NavLink to="/catalogo">Volver al catálogo</NavLink></p>
                     </div>

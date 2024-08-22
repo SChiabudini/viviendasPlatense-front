@@ -42,7 +42,10 @@ const CataloguePreview = () => {
               </div>
               <div className={style.info}>
                 <p className={style.title}>{product.size} {product.type}</p>
-                <p className={style.price}>${product.price.toLocaleString()}</p>
+                {product.type === 'Steel' ?
+                  <p className={style.price}>USD {product.price.toLocaleString()}</p>
+                  : <p className={style.price}>${product.price.toLocaleString()}</p>
+                }
               </div>
             </NavLink>
           </div>
