@@ -28,7 +28,7 @@ const Banner = () => {
                                 <div className={style.banner1text}>                                    
                                     <h3>PROMO ESPECIAL</h3>
                                     <p className={style.price}>BASE DE HORMIGÓN BONIFICADA</p>
-                                    <p className={style.text}><span className={style.textPrice}>$4.852.500</span></p>
+                                    <p className={style.text}><span className={style.textPrice}>$5.174.000</span></p>
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.text}>OFERTA PAGANDO AL CONTADO</p>
                                     <p className={style.number}>
@@ -46,7 +46,7 @@ const Banner = () => {
                                 <div className={style.banner1text}>
                                     <h3>PROMO ESPECIAL</h3>
                                     <p className={style.price}>BASE DE HORMIGÓN BONIFICADA</p>
-                                    <p className={style.text}><span className={style.textPrice}>$4.852.500</span></p>
+                                    <p className={style.text}><span className={style.textPrice}>$5.174.000</span></p>
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.text}>OFERTA PAGANDO AL CONTADO</p>
                                     <p className={style.number}>
