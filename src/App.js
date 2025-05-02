@@ -20,6 +20,7 @@ function App() {
   
   return (
     <div className="App">
+    {/*
     <div className="header"><Header/></div>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -29,7 +30,10 @@ function App() {
         <Route path='/*' element={<Error/>}/>
       </Routes>
       {!hideFooter && <Footer/>}
+      */}
+    <p>Sitio en mantenimiento. Disculpe las molestias.</p>
     </div>
+    
   );
 }
 
