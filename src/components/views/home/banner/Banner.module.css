@@ -68,11 +68,11 @@
 .banner1 .price{
     margin: 0;
     color: #FCDC5B;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
     border-bottom: white solid 2px;
     width: 35%;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -87,8 +87,15 @@
 .banner1 .textPrice{
     color: #FCDC5B;
     letter-spacing: 0.1rem;
-    font-size: 40px;
     font-weight: 500;
+}
+
+.banner1 .textBigger{
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
 }
 
 .banner1 .number{
