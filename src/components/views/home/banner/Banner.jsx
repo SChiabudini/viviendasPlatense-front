@@ -27,9 +27,9 @@ const Banner = () => {
                             <>
                                 <div className={style.banner1text}>                                    
                                     <h3>PROMO ESPECIAL</h3>
-                                    <p className={style.price}>20% de DESCUENTO en toda nuestra línea WOOD FRAME</p>
-                                    <p className={style.textBigger}>Antes <span className={style.textPrice}>$6.011.500</span></p>
-                                    <p className={style.textBigger}>Ahora <span className={style.textPrice}>$4.809.200</span></p>
+                                    <p className={style.price}>10% de DESCUENTO en toda nuestra línea WOOD FRAME</p>
+                                    <p className={style.textBigger}>Antes <span className={style.textPrice}>$6.302.000</span></p>
+                                    <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.671.800</span></p>
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.number}>
                                         <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/1/whatsapp.svg" alt=""/>
@@ -45,9 +45,9 @@ const Banner = () => {
                                 <div className={style.banner1logo}><img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/logo.svg" alt=""/></div>
                                 <div className={style.banner1text}>
                                     <h3>PROMO ESPECIAL</h3>
-                                    <p className={style.price}>20% de DESCUENTO en toda nuestra línea WOOD FRAME</p>
-                                    <p className={style.textBigger}>Antes <span className={style.textPrice}>$6.011.500</span></p>
-                                    <p className={style.textBigger}>Ahora <span className={style.textPrice}>$4.809.200</span></p>
+                                    <p className={style.price}>10% de DESCUENTO en toda nuestra línea WOOD FRAME</p>
+                                    <p className={style.textBigger}>Antes <span className={style.textPrice}>$6.302.000</span></p>
+                                    <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.671.800</span></p>
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.number}>
                                         <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/1/whatsapp.svg" alt=""/>
