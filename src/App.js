@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
     
-      {/*<div className="header"><Header/></div>
+      <div className="header"><Header/></div>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/catalogo' element={<Catalogue/>}/>
@@ -29,8 +29,8 @@ function App() {
         <Route path='/detail/:id' element={<Detail/>} />
         <Route path='/*' element={<Error/>}/>
       </Routes>
-      {!hideFooter && <Footer/>}*/}
-     <p>Sitio en mantenimiento. Disculpe las molestias.</p>
+      {!hideFooter && <Footer/>}
+     {/*<p>Sitio en mantenimiento. Disculpe las molestias.</p>*/}
     </div>
      
     
