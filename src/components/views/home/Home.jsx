@@ -38,11 +38,11 @@ const Home = () => {
         <div>
             <div className={`${style.icons} ${showIcons ? style.visible : ''}`}>
                 <div onClick={scrollToTop} className={style.scrollToTop}>
-                    <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/arrow_up.svg" alt="Flecha hacia arriba" />
+                    <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/arrow_up.svg" alt="Flecha hacia arriba" />
                 </div>
                 <div className={style.whatsapp}>
                     <a href="https://wa.me/542216911442" target="_blank" rel="noopener noreferrer">
-                        <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/whatsapp.svg" alt="Comunicate con nosotros" />
+                        <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/whatsapp.svg" alt="Comunicate con nosotros" />
                     </a>
                 </div>
             </div>

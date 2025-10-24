@@ -32,7 +32,7 @@ const Banner = () => {
                                     <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.571.750</span></p>
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.number}>
-                                        <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/1/whatsapp.svg" alt=""/>
+                                        <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/whatsapp.svg" alt=""/>
                                         <a href='https://wa.me/542216911442?text=Buenos%20d%C3%ADas,%20quisiera%20consultar%20por%20el%20modelo%20en%20promoci%C3%B3n.%20Muchas%20gracias.'>Envianos un WhatsApp </a>
                                         
                                     </p>
@@ -40,18 +40,18 @@ const Banner = () => {
                                     
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.number}>
-                                        <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/1/whatsapp.svg" alt=""/>
+                                        <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/whatsapp.svg" alt=""/>
                                         <a href='https://wa.me/542216911442?text=Buenos%20d%C3%ADas,%20quisiera%20consultar%20por%20el%20modelo%20en%20promoci%C3%B3n.%20Muchas%20gracias.'>Envianos un WhatsApp </a>
                                         
                                     </p> */}
                                 </div>
-                                <div className={style.banner1render}><img  src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/1/banner_1_img_2.jpg" alt="22,5 Americana - 1 Dormitorio - En promoción"/></div>
+                                <div className={style.banner1render}><img  src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/banner_1_img_2.jpg" alt="22,5 Americana - 1 Dormitorio - En promoción"/></div>
                             </>
                         ) : (
                             <>
-                                <div className={style.banner1bg}><img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/1/banner_1_bg.svg" alt=""/></div>
-                                <div className={style.banner1render}><img  src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/1/banner_1_img_2.jpg" alt="22,5 Americana - 1 Dormitorio - En promoción"/></div>
-                                <div className={style.banner1logo}><img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/logo.svg" alt=""/></div>
+                                <div className={style.banner1bg}><img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/banner_1_bg.svg" alt=""/></div>
+                                <div className={style.banner1render}><img  src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/banner_1_img_2.jpg" alt="22,5 Americana - 1 Dormitorio - En promoción"/></div>
+                                <div className={style.banner1logo}><img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/logo.svg" alt=""/></div>
                                 <div className={style.banner1text}>
                                     <h3>PROMO ESPECIAL</h3>
                                     <p className={style.price}>15% de DESCUENTO en toda nuestra línea WOOD FRAME</p>
@@ -59,14 +59,14 @@ const Banner = () => {
                                     <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.571.750</span></p>
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.number}>
-                                        <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/1/whatsapp.svg" alt=""/>
+                                        <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/whatsapp.svg" alt=""/>
                                         <a href='https://wa.me/542216911442?text=Buenos%20d%C3%ADas,%20quisiera%20consultar%20por%20el%20modelo%20en%20promoci%C3%B3n.%20Muchas%20gracias.'>Envianos un WhatsApp </a>
                                         
                                     </p>
                                     {/* <h3>CONSULTAR PROMOS</h3>
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.number}>
-                                        <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/1/whatsapp.svg" alt=""/>
+                                        <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/whatsapp.svg" alt=""/>
                                         <a href='https://wa.me/542216911442?text=Buenos%20d%C3%ADas,%20quisiera%20consultar%20por%20el%20modelo%20en%20promoci%C3%B3n.%20Muchas%20gracias.'>Envianos un WhatsApp </a>
                                         
                                     </p> */}
@@ -76,7 +76,7 @@ const Banner = () => {
                     </div>
 
                     <div className={style.banner2}>
-                        <div className={style.banner2bg}><img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/2/banner_2%20_bg.svg" alt=""/></div>
+                        <div className={style.banner2bg}><img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/2/banner_2%20_bg.svg" alt=""/></div>
                         
                         {isMobile ? (
                             <div className={style.content}>
@@ -85,23 +85,23 @@ const Banner = () => {
                                     <div className={style.textBottom}>
                                         <p><span className={style.textRed}>Adoptá, no compres</span><br/>Tu hogar es mejor con una mascota</p>
                                         <p className={style.contentLogo}>
-                                            <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/2/logo_rescataditos_borde-05.png" alt="Rescataditos La Plata"/>
-                                            <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/2/logo_viviendas_borde-05.png" alt="Viviendas Platense"/>
+                                            <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/2/logo_rescataditos_borde-05.png" alt="Rescataditos La Plata"/>
+                                            <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/2/logo_viviendas_borde-05.png" alt="Viviendas Platense"/>
                                         </p>
                                         
                                     </div>
                                 </div>
-                                <div className={style.contentImg}><img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/2/banner_2_img.png" alt="Equipos de Viviendas Platense y Rescataditos La Plata"/></div>
+                                <div className={style.contentImg}><img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/2/banner_2_img.png" alt="Equipos de Viviendas Platense y Rescataditos La Plata"/></div>
                             </div>
                         ) : (
                             <div className={style.content}>
-                                <div className={style.contentImg}><img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/2/banner_2_img.png" alt="Equipos de Viviendas Platense y Rescataditos La Plata"/></div>
+                                <div className={style.contentImg}><img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/2/banner_2_img.png" alt="Equipos de Viviendas Platense y Rescataditos La Plata"/></div>
                                 <div className={style.contentText}>
                                     <p className={style.textBlue}>Con la compra de tu casa<br/>colaborás con <a href="https://www.instagram.com/rescataditoslaplata/" target="_blank" rel="noopener noreferrer">Rescataditos La Plata</a></p>
                                     <div className={style.textBottom}>
                                         <p><span className={style.textRed}>Adoptá, no compres</span><br/>Tu hogar es mejor con una mascota</p>
-                                        <p className={style.contentLogo}><img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/2/logo_rescataditos_borde-05.png" alt="Rescataditos La Plata"/></p>
-                                        <p className={style.contentLogo}><img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/2/logo_viviendas_borde-05.png" alt="Viviendas Platense"/></p>
+                                        <p className={style.contentLogo}><img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/2/logo_rescataditos_borde-05.png" alt="Rescataditos La Plata"/></p>
+                                        <p className={style.contentLogo}><img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/2/logo_viviendas_borde-05.png" alt="Viviendas Platense"/></p>
                                     </div>
                                 </div>
                             </div>
@@ -118,17 +118,17 @@ const Banner = () => {
                                 <div className={style.images}>
                                     <div className={style.imageContainer}>
                                         <div className={style.imageOverlay}></div>
-                                        <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/catalogue/36%20Americana%20-%202%20Dormitorios/1.jpg" alt="Modelo Americano"/>
+                                        <img src="https://schiabudini.github.io/viviendasPlatenseImg/catalogue/36%20Americana%20-%202%20Dormitorios/1.jpg" alt="Modelo Americano"/>
                                         <p>PREMIUM</p>
                                     </div>
                                     <div className={style.imageContainer}>
                                         <div className={style.imageOverlay}></div>
-                                        <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/banners/3/eco.jpg" alt="Modelo Minimalista"/>
+                                        <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/3/eco.jpg" alt="Modelo Minimalista"/>
                                         <p>ECO</p>
                                     </div>
                                     <div className={style.imageContainer}>
                                         <div className={style.imageOverlay}></div>
-                                        <img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/catalogue/58%2C5%20Steel%20-%203%20Dormitorios/1.jpg" alt="Modelo 2 Plantas"/>
+                                        <img src="https://schiabudini.github.io/viviendasPlatenseImg/catalogue/58%2C5%20Steel%20-%203%20Dormitorios/1.jpg" alt="Modelo 2 Plantas"/>
                                         <p>STEEL</p>
                                     </div>
                                 </div>

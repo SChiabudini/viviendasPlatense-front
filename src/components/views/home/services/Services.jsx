@@ -18,13 +18,13 @@ const Services = () => {
     return(
         <div className={style.div}>
             {isMobile ? (
-                <div className={style.bgImg}><img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/services_mobile.jpg" alt=""/></div>
+                <div className={style.bgImg}><img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/services_mobile.jpg" alt=""/></div>
             ) : (
-                <div className={style.bgImg}><img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/services_desktop.jpg" alt=""/></div>
+                <div className={style.bgImg}><img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/services_desktop.jpg" alt=""/></div>
             )}
         
             <div className={style.content}>
-                <div className={style.image}><img src="https://raw.githubusercontent.com/SChiabudini/viviendasPlatenseImg/main/resources/logo.svg" alt="Viviendas Platense"/></div>
+                <div className={style.image}><img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/logo.svg" alt="Viviendas Platense"/></div>
                 <div className={style.info}>
                     <h2>Servicios</h2>
                     <p>DISEÑOS PERSONALIZADOS</p>
