@@ -29,7 +29,7 @@ const Banner = () => {
                                     <h3>PROMO ESPECIAL</h3>
                                     <p className={style.price}>20% de DESCUENTO en toda nuestra línea WOOD FRAME</p>
                                     <p className={style.textBigger}>Antes <span className={style.textPrice}>$6.555.000</span></p>
-                                    <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.571.750</span></p>
+                                    <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.244.000</span></p>
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.number}>
                                         <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/whatsapp.svg" alt=""/>
@@ -56,7 +56,7 @@ const Banner = () => {
                                     <h3>PROMO ESPECIAL</h3>
                                     <p className={style.price}>20% de DESCUENTO en toda nuestra línea WOOD FRAME</p>
                                     <p className={style.textBigger}>Antes <span className={style.textPrice}>$6.555.000</span></p>
-                                    <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.571.750</span></p>
+                                    <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.244.000</span></p>
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.number}>
                                         <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/whatsapp.svg" alt=""/>
