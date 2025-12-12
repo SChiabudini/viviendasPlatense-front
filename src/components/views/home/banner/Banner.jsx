@@ -28,8 +28,8 @@ const Banner = () => {
                                 <div className={style.banner1text}>                                    
                                     <h3>PROMO ESPECIAL</h3>
                                     <p className={style.price}>20% de DESCUENTO en toda nuestra línea WOOD FRAME</p>
-                                    <p className={style.textBigger}>Antes <span className={style.textPrice}>$6.555.000</span></p>
-                                    <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.244.000</span></p>
+                                    <p className={style.textBigger}>Antes <span className={style.textPrice}>$6.220.000</span></p>
+                                    <p className={style.textBigger}>Ahora <span className={style.textPrice}>$4.976.000</span></p>
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.number}>
                                         <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/whatsapp.svg" alt=""/>
@@ -55,8 +55,8 @@ const Banner = () => {
                                 <div className={style.banner1text}>
                                     <h3>PROMO ESPECIAL</h3>
                                     <p className={style.price}>20% de DESCUENTO en toda nuestra línea WOOD FRAME</p>
-                                    <p className={style.textBigger}>Antes <span className={style.textPrice}>$6.555.000</span></p>
-                                    <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.244.000</span></p>
+                                    <p className={style.textBigger}>Antes <span className={style.textPrice}>$6.220.000</span></p>
+                                    <p className={style.textBigger}>Ahora <span className={style.textPrice}>$4.976.000</span></p>
                                     <p className={style.text}>Flete y armado bonificados</p>
                                     <p className={style.number}>
                                         <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/whatsapp.svg" alt=""/>
