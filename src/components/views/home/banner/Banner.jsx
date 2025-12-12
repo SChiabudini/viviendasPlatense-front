@@ -26,7 +26,7 @@ const Banner = () => {
                         {isMobile ? (
                             <>
                                 <div className={style.banner1text}>                                    
-                                    <h3>PROMO ESPECIAL</h3>
+                                    {/* <h3>PROMO ESPECIAL</h3>
                                     <p className={style.price}>20% de DESCUENTO en toda nuestra línea WOOD FRAME</p>
                                     <p className={style.textBigger}>Antes <span className={style.textPrice}>$6.220.000</span></p>
                                     <p className={style.textBigger}>Ahora <span className={style.textPrice}>$4.976.000</span></p>
@@ -36,14 +36,16 @@ const Banner = () => {
                                         <a href='https://wa.me/542216911442?text=Buenos%20d%C3%ADas,%20quisiera%20consultar%20por%20el%20modelo%20en%20promoci%C3%B3n.%20Muchas%20gracias.'>Envianos un WhatsApp </a>
                                         
                                     </p>
-                                    {/* <h3>CONSULTAR PROMOS</h3>
+                                     */}
+                                    <h3>CONSULTAR PROMOS</h3>
                                     
-                                    <p className={style.text}>Flete y armado bonificados</p>
+                                    <p className={style.text}>Platea de hormigón de regalo</p>
+                                    <p className={style.text}>En todas nuestras líneas</p>
                                     <p className={style.number}>
                                         <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/whatsapp.svg" alt=""/>
                                         <a href='https://wa.me/542216911442?text=Buenos%20d%C3%ADas,%20quisiera%20consultar%20por%20el%20modelo%20en%20promoci%C3%B3n.%20Muchas%20gracias.'>Envianos un WhatsApp </a>
                                         
-                                    </p> */}
+                                    </p>
                                 </div>
                                 <div className={style.banner1render}><img  src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/banner_1_img_2.jpg" alt="22,5 Americana - 1 Dormitorio - En promoción"/></div>
                             </>
@@ -53,7 +55,7 @@ const Banner = () => {
                                 <div className={style.banner1render}><img  src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/banner_1_img_2.jpg" alt="22,5 Americana - 1 Dormitorio - En promoción"/></div>
                                 <div className={style.banner1logo}><img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/logo.svg" alt=""/></div>
                                 <div className={style.banner1text}>
-                                    <h3>PROMO ESPECIAL</h3>
+                                    {/* <h3>PROMO ESPECIAL</h3>
                                     <p className={style.price}>20% de DESCUENTO en toda nuestra línea WOOD FRAME</p>
                                     <p className={style.textBigger}>Antes <span className={style.textPrice}>$6.220.000</span></p>
                                     <p className={style.textBigger}>Ahora <span className={style.textPrice}>$4.976.000</span></p>
@@ -63,13 +65,15 @@ const Banner = () => {
                                         <a href='https://wa.me/542216911442?text=Buenos%20d%C3%ADas,%20quisiera%20consultar%20por%20el%20modelo%20en%20promoci%C3%B3n.%20Muchas%20gracias.'>Envianos un WhatsApp </a>
                                         
                                     </p>
-                                    {/* <h3>CONSULTAR PROMOS</h3>
-                                    <p className={style.text}>Flete y armado bonificados</p>
+                                     */}
+                                    <h3>CONSULTAR PROMOS</h3>
+                                    <p className={style.text}>Platea de hormigón de regalo</p>
+                                    <p className={style.text}>En todas nuestras líneas</p>
                                     <p className={style.number}>
                                         <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/whatsapp.svg" alt=""/>
                                         <a href='https://wa.me/542216911442?text=Buenos%20d%C3%ADas,%20quisiera%20consultar%20por%20el%20modelo%20en%20promoci%C3%B3n.%20Muchas%20gracias.'>Envianos un WhatsApp </a>
                                         
-                                    </p> */}
+                                    </p>
                                 </div>
                             </>
                         )}
