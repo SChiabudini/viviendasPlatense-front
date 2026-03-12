@@ -1,7 +1,7 @@
 //import House from "./house/House";
 //import Filters from "./filters/Filters";
 import style from "./Catalogue.module.css";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { getProducts } from "../../../redux/productActions";
 
