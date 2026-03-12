@@ -1,5 +1,5 @@
 //import House from "./house/House";
-import Filters from "./filters/Filters";
+//import Filters from "./filters/Filters";
 import style from "./Catalogue.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
@@ -13,7 +13,7 @@ const Catalogue = () => {
         dispatch(getProducts());
     }, [dispatch]);
 
-    const { productsCopy } = useSelector((state) => state.products);
+    //const { productsCopy } = useSelector((state) => state.products);
 
     return(
         <div className={style.div}>
