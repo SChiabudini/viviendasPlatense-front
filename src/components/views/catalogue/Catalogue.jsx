@@ -17,8 +17,8 @@ const Catalogue = () => {
 
     return(
         <div className={style.div}>
-
-                <Filters/>
+<p>Sitio en mantenimiento. Disculpe las molestias.</p>
+               {/* <Filters/>
             
                 <div className={style.cards}>
                     {productsCopy.map(product => (
@@ -34,7 +34,7 @@ const Catalogue = () => {
                             />
                         </div>
                     ))}
-                </div>
+                </div>*/}
         </div>
     );
 }
