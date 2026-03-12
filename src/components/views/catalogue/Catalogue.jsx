@@ -1,4 +1,4 @@
-import House from "./house/House";
+//import House from "./house/House";
 import Filters from "./filters/Filters";
 import style from "./Catalogue.module.css";
 import { useSelector, useDispatch } from "react-redux";
