@@ -1,7 +1,7 @@
-//import House from "./house/House";
-//import Filters from "./filters/Filters";
+import House from "./house/House";
+import Filters from "./filters/Filters";
 import style from "./Catalogue.module.css";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { getProducts } from "../../../redux/productActions";
 
@@ -13,12 +13,11 @@ const Catalogue = () => {
         dispatch(getProducts());
     }, [dispatch]);
 
-    //const { productsCopy } = useSelector((state) => state.products);
+    const { productsCopy } = useSelector((state) => state.products);
 
     return(
         <div className={style.div}>
-<p>Sitio en mantenimiento. Disculpe las molestias.</p>
-               {/* <Filters/>
+               <Filters/>
             
                 <div className={style.cards}>
                     {productsCopy.map(product => (
@@ -34,7 +33,7 @@ const Catalogue = () => {
                             />
                         </div>
                     ))}
-                </div>*/}
+                </div>
         </div>
     );
 }
