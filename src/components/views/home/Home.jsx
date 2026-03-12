@@ -1,7 +1,7 @@
 // Home.jsx
 import React, { useEffect, useState } from 'react';
 import Banner from './banner/Banner';
-import CataloguePreview from './cataloguePreview/CataloguePreview';
+//import CataloguePreview from './cataloguePreview/CataloguePreview';
 import Services from './services/Services';
 import Portfolio from './portfolio/Portfolio';
 import style from './Home.module.css';
