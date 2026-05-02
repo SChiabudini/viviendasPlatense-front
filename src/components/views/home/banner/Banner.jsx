@@ -26,12 +26,12 @@ const Banner = () => {
                         {isMobile ? (
                             <>
                                 <div className={style.banner1text}>                                    
-                                     <h3>PROMO ESPECIAL</h3>
-                                    <p className={style.price}>15% de DESCUENTO en todos los modelos</p>
+                                     <h3>HOT SALE</h3>
+                                    <p className={style.price}>25% OFF</p>
                                     <p className={style.text}>Monoambiente Premium</p>
                                     <p className={style.text}>18m2 Línea Wood Frame</p>
-                                   {/* <p className={style.textBigger}>Antes <span className={style.textPrice}>$5.915.000</span></p>
-                                    <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.030.000</span></p>*/}
+                                    <p className={style.textBigger}><span className={style.textPrice}>$5.452.000</span></p>
+                                    {/* <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.030.000</span></p>*/}
                                     <p className={style.number}>
                                         <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/whatsapp.svg" alt=""/>
                                         <a href='https://wa.me/542216911442?text=Buenos%20d%C3%ADas,%20quisiera%20consultar%20por%20el%20modelo%20en%20promoci%C3%B3n.%20Muchas%20gracias.'>Envianos un WhatsApp </a>
@@ -56,12 +56,12 @@ const Banner = () => {
                                 <div className={style.banner1render}><img  src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/banner_1_img_3_2.jpeg" alt="22,5 Americana - 1 Dormitorio - En promoción"/></div>
                                 <div className={style.banner1logo}><img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/logo.svg" alt=""/></div>
                                 <div className={style.banner1text}>
-                                    <h3>PROMO ESPECIAL</h3>
-                                    <p className={style.price}>15% de DESCUENTO en todos los modelos</p>
+                                    <h3>HOT SALE</h3>
+                                    <p className={style.price}>25% OFF</p>
                                     <p className={style.text}>Monoambiente Premium</p>
                                     <p className={style.text}>18m2 Línea Wood Frame</p>
-                                   {/* <p className={style.textBigger}>Antes <span className={style.textPrice}>$5.915.000</span></p>
-                                    <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.030.000</span></p>*/}
+                                    <p className={style.textBigger}><span className={style.textPrice}>$5.452.000</span></p>
+                                    {/* <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.030.000</span></p>*/}
                                     <p className={style.number}>
                                         <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/whatsapp.svg" alt=""/>
                                         <a href='https://wa.me/542216911442?text=Buenos%20d%C3%ADas,%20quisiera%20consultar%20por%20el%20modelo%20en%20promoci%C3%B3n.%20Muchas%20gracias.'>Envianos un WhatsApp </a>
@@ -124,7 +124,7 @@ const Banner = () => {
                                 <div className={style.images}>
                                     <div className={style.imageContainer}>
                                         <div className={style.imageOverlay}></div>
-                                        <img src="https://schiabudini.github.io/viviendasPlatenseImg/catalogue/36%20Americana%20-%202%20Dormitorios/1.jpg" alt="Modelo Americano"/>
+                                        <img src="https://schiabudini.github.io/viviendasPlatenseImg/catalogue/36%20Americana%20-%202%20Dormitorios/1-1.jpg" alt="Modelo Americano"/>
                                         <p>PREMIUM</p>
                                     </div>
                                     <div className={style.imageContainer}>
