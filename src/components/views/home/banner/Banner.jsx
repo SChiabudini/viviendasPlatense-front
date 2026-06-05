@@ -26,11 +26,11 @@ const Banner = () => {
                         {isMobile ? (
                             <>
                                 <div className={style.banner1text}>                                    
-                                     <h3>HOT SALE</h3>
-                                    <p className={style.price}>25% OFF</p>
-                                    <p className={style.text}>Monoambiente Premium</p>
+                                    <h3>Monoambiente</h3>
+                                    <p className={style.price}>Premium</p>
                                     <p className={style.text}>18m2 Línea Wood Frame</p>
-                                    <p className={style.textBigger}><span className={style.textPrice}>$5.452.000</span></p>
+                                    <p className={style.textBigger}><span className={style.textPrice}>$7.269.000</span></p>                                    
+                                    <p className={style.text}>Flete y armado bonificados hasta 100km</p>
                                     {/* <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.030.000</span></p>*/}
                                     <p className={style.number}>
                                         <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/whatsapp.svg" alt=""/>
@@ -56,11 +56,11 @@ const Banner = () => {
                                 <div className={style.banner1render}><img  src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/banner_1_img_3_2.jpeg" alt="22,5 Americana - 1 Dormitorio - En promoción"/></div>
                                 <div className={style.banner1logo}><img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/logo.svg" alt=""/></div>
                                 <div className={style.banner1text}>
-                                    <h3>HOT SALE</h3>
-                                    <p className={style.price}>25% OFF</p>
-                                    <p className={style.text}>Monoambiente Premium</p>
+                                    <h3>Monoambiente</h3>
+                                    <p className={style.price}>Premium</p>
                                     <p className={style.text}>18m2 Línea Wood Frame</p>
-                                    <p className={style.textBigger}><span className={style.textPrice}>$5.452.000</span></p>
+                                    <p className={style.textBigger}><span className={style.textPrice}>$7.269.000</span></p>
+                                    <p className={style.text}>Flete y armado bonificados hasta 100km</p>
                                     {/* <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.030.000</span></p>*/}
                                     <p className={style.number}>
                                         <img src="https://schiabudini.github.io/viviendasPlatenseImg/resources/banners/1/whatsapp.svg" alt=""/>
