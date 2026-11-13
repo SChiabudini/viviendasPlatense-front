@@ -29,7 +29,7 @@ const Banner = () => {
                                     <h3>Monoambiente</h3>
                                     <p className={style.price}>Premium</p>
                                     <p className={style.text}>18m2 Línea Wood Frame</p>
-                                    <p className={style.textBigger}><span className={style.textPrice}>$7.269.000</span></p>                                    
+                                    <p className={style.textBigger}><span className={style.textPrice}>$6.770.000</span></p>                                    
                                     <p className={style.text}>Flete y armado bonificados hasta 100km</p>
                                     {/* <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.030.000</span></p>*/}
                                     <p className={style.number}>
@@ -59,7 +59,7 @@ const Banner = () => {
                                     <h3>Monoambiente</h3>
                                     <p className={style.price}>Premium</p>
                                     <p className={style.text}>18m2 Línea Wood Frame</p>
-                                    <p className={style.textBigger}><span className={style.textPrice}>$7.269.000</span></p>
+                                    <p className={style.textBigger}><span className={style.textPrice}>$6.770.000</span></p>
                                     <p className={style.text}>Flete y armado bonificados hasta 100km</p>
                                     {/* <p className={style.textBigger}>Ahora <span className={style.textPrice}>$5.030.000</span></p>*/}
                                     <p className={style.number}>
